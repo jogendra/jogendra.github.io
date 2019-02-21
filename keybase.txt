@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/jogendra
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jogendra.github.io
+  * I am jogendra (https://keybase.io/jogendra) on keybase.
+  * I have a public key with fingerprint 11A1 155F 7873 91E3 B0B2  45EB 36D8 1AA0 FF56 B4A0
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101ea93b09d3e48d240cded38f9e2560cbe0d431177b1cec5a2519aa0e9e58c0dca0a",
+      "fingerprint": "11a1155f787391e3b0b245eb36d81aa0ff56b4a0",
+      "host": "keybase.io",
+      "key_id": "36d81aa0ff56b4a0",
+      "kid": "0101ea93b09d3e48d240cded38f9e2560cbe0d431177b1cec5a2519aa0e9e58c0dca0a",
+      "uid": "782213dfded0ca7f698bc42bbee00919",
+      "username": "jogendra"
+    },
+    "service": {
+      "hostname": "jogendra.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1550749062,
+  "expire_in": 157680000,
+  "prev": "6aae77e6135f1ab98b74a45e00a254381ae759a4ed9d928706cec504cf009ce9",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIkAnicrVJbSBVBGD5295AhRUopkZuk2dFm9r4HungJuoBZEEpZp9ndf49rp93T
+7no0Dha+FFFBRSRakhYpPXQhjKKLlRlFhpgIBfVSQQVRUXSnolmrl+ixeRnmn+/7
+5v+++fvSRgeCKctTO7OWLjldk9J/va0uUG3t2Z5kVFvfwoSTzEYY2SCmg+tFNpo6
+E2YQRhiIwqlI0TngZZ3lkaaDzsmGAqwgIk0FpPMcxpKkYg00gbACVghBoIAga0jX
+CCJMiDFMKwpO3DEtj8piTDAWBEOSJU7BQOVVlhdA5URdxpRsGIKo8gRRYo3t+gza
+nEpcKDJtWqOHyEh7/8D/577rRuQkmWUxpxtUAWlEMkRFVjWeVVUAhBSs+EAXHIts
+AoqutaNg6Q5hGkMMrSZMDfxgfSd/IYqipldTp/5yFXdsz9bsGL2v8by4G/b53pa4
+T6gHNfJbKqKalk7TpIwEOK5pW0wYU6Tmmb42jRVJvIJENsRAQ9x0IGL6CEESZUSX
+/w4kqKRICEgSiJgTDExU6kjiCf0EhGgUPEdzBUlQCA+6oiusLCHRjwnxmkEta+B7
+dmGzZTNhnrZJolTSNaMW8eocYBp7r1WPCaQEA+PGjvKnLBBMTf8ze9MXTQic2LGm
+4GTL1w8HzN4f3N0vu7O7Oq9kv5xGHpLB5qfN29bdy2jftf32rM8DK4PH3rz/1NNR
+29I0P7PkI2ptDBeGug6G05I35YZVi5u+P6+qIJcaHsGkczv451PzTyWuqs1z6zty
+PuS+SFrpZ1sfD+fdevKgUH5VfDy0tXfm1YVj59ituQP6mVEb+l+UXG8pPdxz/5lV
+ZTvjZ9R/PXS2mMu4kjmx73Nx1pH0TL67rKcs9fXkH4PD7e+E7p7yo+c7blQsW0uG
+K0tXr8gcrhyydqaF8rl91YPdyf0X7hSkLQitXDR7qC3x0X0XK5q3t6st2hR7+yAn
+L7q+tupb+b4pNyZZeTkXX17+CRULQdo=
+=N3x/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jogendra
+
+==================================================================
