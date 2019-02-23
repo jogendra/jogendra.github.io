@@ -3,7 +3,7 @@ layout: post
 title: My Google Summer of Code Project Blogs
 description: I have written weekly blog about the project feature I was working on during Google Summer Code.
 comments: true
-keywords: google summer of code, gsoc, blogs, gsoc blogs, gsoc experience
+keywords: google summer of code, gsoc, blogs, gsoc blogs, gsoc experience, fossasia, open source
 ---
 
 I was Google Summer of Code (2018) Student Developer for [FOSSASIA](https://fossasia.org/). I spend summer working on [SUSI.AI iOS](https://github.com/fossasia/susi_iOS) project. During GSoC period, I have written weekly blogs about the features implemented by me. You can find all the blogs in links below. These blogs are originally published on [FOSSASIA Blogs](https://blog.fossasia.org/author/imjog/) website.
