@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing my GitHub username
+title: Changing My GitHub Username
 description: So I did something crazy. Changed my GitHub username. Now I have my first name as my GitHub username.
 comments: true
 keywords: changing github username, change github username, reason to change github username, should I change github username
