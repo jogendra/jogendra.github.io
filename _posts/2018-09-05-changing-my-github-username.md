@@ -47,3 +47,5 @@ Now, I have to update my GitHub profile URL wherever I had given and change Remo
 
 Find me on GitHub with my new username here:
 [https://github.com/jogendra](https://github.com/jogendra)
+
+If you ever want to change your GitHub username, [this post](https://nikhita.github.io/changing-my-github-username) by [Nikhita](https://github.com/nikhita) is very helpful. In fact, I was inspired by this post!
