@@ -4,7 +4,7 @@ title: Talks
 permalink: /talks/
 ---
 <br>
-<div align="center"> A list of talks I have presented at conferences and meetups. </div>
+<div align="center"> A list of talks I have presented at conferences/summit and meetups/workshop. </div>
 
 <div>
 {% for talks in site.talks reversed %}
