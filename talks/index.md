@@ -29,7 +29,7 @@ permalink: /talks/
       {% endif %}
       <br>
 
-      <i class="fa fa-comments-o" aria-hidden="true"></i>
+      <i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;&nbsp;
       {% if talks.event-url %}
       <a href="{{ talks.event-url }}"
        title="{% if talks.event-fulltitle %}{{ talks.event-fulltitle }}{% else %}{{ talks.event }}{% endif %}
@@ -41,17 +41,17 @@ permalink: /talks/
       <br>
 
       <span class="location">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
         {{ talks.location }}
       </span>
       <br>
 
-      <i class="fa fa-calendar" aria-hidden="true"></i> {{ talks.date | date: "%B %-d, %Y" }}
+      <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp; {{ talks.date | date: "%B %-d, %Y" }}
       <br>
 
       {% if talks.slides %}
         <span class="talks-resource">
-          <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          <i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp;
           {% if talks.slides contains ".pdf" %}
             <a href="{{ site.pdfs }}/{{ talks.slides }}">
           {% else %}
@@ -60,25 +60,24 @@ permalink: /talks/
           Slides</a>
         </span>
       {% endif %}
-      
+
       {% if talks.video %}
         &nbsp; &nbsp;
-        <span class="talks-resource"><i class="fa fa-file-video-o" aria-hidden="true"></i> <a href="{{ talks.video }}">Video</a></span>
+        <span class="talks-resource"><i class="fa fa-file-video-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="{{ talks.video }}">Video</a></span>
       {% endif %}
-      
+
       {% if talks.post %}
         &nbsp; &nbsp;
         <span class="talks-resource">
-          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+          <i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;&nbsp;
           <a href="{{ site.url }}{{ talks.post }}">Post</a>
         </span>
       {% endif %}
-  
+
       {% if talks.featured %}
         &nbsp; &nbsp;
-        <span class="talks-resource"><i class="fa fa-file-text-o" aria-hidden="true"></i> <a href="{{ talks.featured }}">Featured</a></span>
+        <span class="talks-resource"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="{{ talks.featured }}">Featured</a></span>
       {% endif %}
     </div>
 {% endfor %}
 </div>
-
