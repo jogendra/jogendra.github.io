@@ -7,13 +7,13 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 120%;
-    margin: 0 -10%;
+    width: 100%;
+    margin: 0;
 }
 
 .cards .card {
-  width: 46%;
-  margin: 2%;
+  width: 100%;
+  margin: 2% 0;
 }
 
 .card {
@@ -32,4 +32,36 @@
 
 .cards .card-title {
     margin-bottom: .75rem;
+}
+
+.card-body .card-language {
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+
+  .cards {
+    width: 120%;
+    margin: 0 -10%;
+  }
+
+  .cards .card {
+    width: 44%;
+    margin: 3%;
+  }
+
+}
+
+
+ul.actions {
+    cursor: default;
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+ul.actions li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    vertical-align: middle;
 }
