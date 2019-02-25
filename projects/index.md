@@ -12,7 +12,8 @@ _Updating Soon! Till then find projects [here](https://jogendra.github.io/my-old
   <div class="card-body">
     <h3 class="card-title">SUSI AI iOS</h3>
     <p class="card-text">The main feature of the app is to provide a conversational interface to provide intelligent answers using the loklak/AskSusi infrastructure. The SUSI iOS App make use of the APIs to access information from the hosted server.</p>
-    <a href="#"><i class="fa fa-github"></i>&nbsp;&nbsp;Project GitHub Link</a>
+    <a href="#"><i class="fa fa-github"></i>&nbsp;&nbsp;Project GitHub Link</a><br>
+    <a href="#"><i class="fa fa-link"></i>&nbsp;&nbsp;Web Link</a>
     <p class="card-language"><i class="fa fa-code"></i>&nbsp;&nbsp;Swift, Xcode, Objective-C, Shell</p>
     </div>
               <ul class="actions">
