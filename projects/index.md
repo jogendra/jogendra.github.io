@@ -7,7 +7,7 @@ permalink: /projects/
 <div class="cards">
 {% for projects in site.projects reversed %}
 <div class="card">
-  <img class="card-img-top" src="{{ projects.image }}" alt="{{ projects.title }}" style="width:100%;">
+  <img class="card-img-top" src="{{ projects.image }}" alt="{{ projects.title }}">
   <div class="card-body">
     <h3 class="card-title">{{ projects.title }}</h3>
     <p class="card-text">{{ projects.description }}</p>

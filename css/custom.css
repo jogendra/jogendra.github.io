@@ -22,8 +22,7 @@
 }
 
 .cards .card-img-top {
-    width: 100%;
-    height: 180px;
+    width: auto;
 }
 
 .cards .card-body {
