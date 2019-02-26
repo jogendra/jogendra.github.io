@@ -3,7 +3,6 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-_Updating Soon! Till then find projects [here](https://jogendra.github.io/my-old-personal-website/projects) (NOT UPDATED)_
 
 <div class="cards">
 {% for projects in site.projects reversed %}
@@ -24,11 +23,17 @@ _Updating Soon! Till then find projects [here](https://jogendra.github.io/my-old
     {% endif %}
     <p class="card-language"><i class="fa fa-code"></i>&nbsp;&nbsp;{{ projects.languages }}</p>
     </div>
+    {% if projects.github %}
               <ul class="actions">
 								<li><a class="github-button" href="{{ projects.github }}/archive/master.zip" aria-label="Download on GitHub">Download</a></li>
 								<li><a class="github-button" href="{{ projects.github }}" data-show-count="true" aria-label="Star on GitHub">Star</a></li>
 								<li><a class="github-button" href="{{ projects.github }}/fork" data-show-count="true" aria-label="Fork on GitHub">Fork</a></li>
 							</ul>
+        {% else %}
+        <ul class="actions">
+          <li style="color:red;">Project source code is not open sourced</li>
+        </ul>
+    {% endif %}
 </div>
 {% endfor %}
 <!-- GitHub buttons -->
