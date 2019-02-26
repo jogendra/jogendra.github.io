@@ -12,8 +12,16 @@ _Updating Soon! Till then find projects [here](https://jogendra.github.io/my-old
   <div class="card-body">
     <h3 class="card-title">{{ projects.title }}</h3>
     <p class="card-text">{{ projects.description }}</p>
+    {% if projects.github %}
     <a href="{{ projects.github }}"><i class="fa fa-github"></i>&nbsp;&nbsp;Project GitHub Link</a><br>
+      {% else%}
+    <span class="not-available"><i class="fa fa-github"></i>&nbsp;&nbsp;Not Available<br></span>
+    {% endif %}
+    {% if projects.weblink %}
     <a href="{{ projects.weblink }}"><i class="fa fa-link"></i>&nbsp;&nbsp;Web Link</a>
+      {% else%}
+    <span class="not-available"><i class="fa fa-link"></i>&nbsp;&nbsp;Not Available</span>
+    {% endif %}
     <p class="card-language"><i class="fa fa-code"></i>&nbsp;&nbsp;{{ projects.languages }}</p>
     </div>
               <ul class="actions">
