@@ -405,15 +405,14 @@ pre code.hljs {
 */
 .site-footer {
 	$link-color: $white;
-	padding: 1em 1em 2em 1em;
-	background-color: $highlight-color;
-	color: $white;
+	padding: 1%;
+	color: #999;
+	text-align: center;
 	a {
-	  color: $link-color;
 	  &:active,
 	  &:focus,
 	  &:hover {
-	    color: darken($link-color, 10%);
+	    color: darken($link-color, 100%);
 	  }
 	  &:active,
 	  &:focus {

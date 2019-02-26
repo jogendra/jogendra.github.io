@@ -68,3 +68,19 @@ ul.actions li {
 .not-available {
   color: red;
 }
+
+.footer-hr {
+    display: inline-block;
+    width: 50%;
+    border-bottom: 1px solid #666;
+}
+
+.site-footer .credit {
+  font-size: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer .credit {
+    font-size: 0.8em;
+  }
+}

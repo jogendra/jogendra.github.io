@@ -1,52 +1,22 @@
-<footer class="site-footer" style="display:none;">
-
-  <div class="wrapper">
-    <div class="site-navigation">
-
-      <p><strong>Site Map</strong></p>
-      <ul class="pages">
-        {% for page in site.pages %}
-        {% if page.title and page.site_map != false %}
-          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="site-contact">
-
-      <p><strong>Contact</strong></p>
-      <ul class="social-media-list">
-        <li>
-          <a href="mailto:{{ site.email }}">
-            <i class="fa fa-envelope-o"></i>
-            <span class="username">{{ site.email }}</span>
-          </a>
-        </li>
-
-        {% for social in site.social %}
-          {% if social.url != null %}
-          <li>
-            <a href="{{ social.url }}" title="{{ social.desc }}" target="_blank">
-              <i class="fa fa-{{ social.icon }}"></i>
-              <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
-            </a>
-          </li>
-          {% endif %}
-        {% endfor %}
-
-      </ul>
-    </div>
-
-    <div class="site-signature">
-      <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <i class="fa fa-rss"></i></a></strong></p>
-      <p class="text">{{ site.description }}</p>
-    </div>
-
+{% if page.title != "About Me" %}
+<footer class="site-footer">
+  <hr class="footer-hr">
+  <div align="center">
+  <p>
+  <a href="mailto:jogendra.iitbhu@gmail.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  <a href="https://github.com/jogendra"><i class="fa fa-github" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  <a href="https://twitter.com/imjog24"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  <a href="https://www.linkedin.com/in/jogendrasingh24/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  &nbsp; &nbsp; &nbsp;
+  </p>
   </div>
+  <p class="credit">Designed and Developed by <a href="https://twitter.com/imjog24">Jogendra</a> in love with <i class="fa fa-code"></i> and <i class="fa fa-coffee"></i></p>
 
 </footer>
-
+{% endif %}
 <!-- Scripts -->
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
