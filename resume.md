@@ -17,9 +17,19 @@ Bachelors and Masters in Engineering Physics (Integrated Dual Degree)
 <i class="fa fa-map-marker"></i>&nbsp; Varanasi, India &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; July 2015 - May 2020
 </div>
 
+**Mayur Nobles Academy, Sen. Sec. School, Barmer**
+<br>
+High School, Science Mathematics, 90.60 %
+<br>
+_3rd Rank in the district with 99.72 percentile (Rajasthan Board)_
+<br>
+<div class="resume-footer">
+<i class="fa fa-map-marker"></i>&nbsp; Barmer, Rajasthan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; 2012 - 2014
+</div>
 <hr>
 
 ## Technical Experiences
+
 ### Google Summer of Code (2018)
 **Student Developer**<br>
 - Worked on FOSSASIA’s SUSI iOS App. Implemented interactive features to the app such as 5-Start rating system, Feedback system, Onboarding screens, New actions support as well as Audio and Video capability.
@@ -29,6 +39,15 @@ Bachelors and Masters in Engineering Physics (Integrated Dual Degree)
 <div class="resume-footer">
 <i class="fa fa-map-marker"></i>&nbsp; Remote &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; 14 May - 06 August, 2018 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://gist.github.com/jogendra/e51cf846e2637b0aa26451789c2f28e8">Project Report</a>
 </div>
+
+### iOS Developer
+**[FOSSASIA](https://fossasia.org/)**
+<br>
+Maintaining, designing and developing new features for the iOS Apps in Swift and managing Open Source contributions for the following projects:
+- [SUSI.AI iOS](https://github.com/fossasia/susi_iOS) - Artificial Intelligence for Personal Assistants,
+Robots, Help Desks and Chatbots
+- [Open Event iOS](https://github.com/fossasia/open-event-ios) - Offers event managers a platform to organize all kinds of events
+- [Eventyay Organizer iOS](https://github.com/fossasia/open-event-orga-iOS) - Event management app for organizers using Open Event Platform
 
 ### iOS Developer Intern
 **[Wheelstreet Inc.](https://www.wheelstreet.com/)**
@@ -56,3 +75,40 @@ Bachelors and Masters in Engineering Physics (Integrated Dual Degree)
 
 ## Projects
 All the projects done by me can be found on [projects page](/projects/).
+<hr>
+
+## Leadership Experiences
+- #### GitHub Campus Expert
+**[GitHub Education](https://education.github.com/)**
+<br>
+Campus Experts are students who have taken the time to improve their local tech community. To become a Campus Expert, I have completed hours of training, with guidance from GitHub and partners. I have committed myself to develop the community and opening doors for students who want to be a part of it.
+<br>
+<div class="resume-footer">
+<i class="fa fa-map-marker"></i>&nbsp; IIT Varanasi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; January 2019 - Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://githubcampus.expert/jogendra/">Campus Expert Link</a>
+</div>
+
+- #### Joint Secretary
+**[The Business Club, IIT (BHU) Varanasi](https://www.linkedin.com/company/cefiitbhu/)**
+<br>
+I was Joint Secretary for 2017-18 session. As a Joint Secretary, I organized workshops, events and talks in campus.
+The club aims to take the concept of economics and finance down to every single individual in the student community since 'Knowledge is Power'​. The value of this knowledge lies in its ability to provide them with a new and useful way of thinking about the world in which we live.
+<br>
+<div class="resume-footer">
+<i class="fa fa-map-marker"></i>&nbsp; IIT Varanasi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; May 2017 - April 2018 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://www.facebook.com/bizclub.iitbhu">Club Facebook Page</a>
+</div>
+<hr>
+
+## Mentorship/Volunteering
+- #### Google Summer of Code 2019
+- #### Google Code-In 2018
+- #### NJAK Winter of Code 2018
+- #### OpenCode 2019
+- #### GirlScript Summer of Code (GSSoC) 2019
+- #### HexaHive Hackathon
+
+<hr>
+
+## Courses
+- [Neural Networks and Deep Learning by deeplearning.ai on Coursera](https://www.coursera.org/account/accomplishments/verify/5V5QZ4BYB3A9)
+- Developing Apps for iOS(CS193p) - Stanford University
+- iOS 10 and Xcode 8 - Complete Swift 3 & Objective-C Course on Udemy
