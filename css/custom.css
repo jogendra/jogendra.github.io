@@ -84,3 +84,10 @@ ul.actions li {
     font-size: 0.8em;
   }
 }
+
+.resume-footer {
+  color: #666;
+  /* border-left: 4px solid #999;
+  padding-left: 2%; */
+  margin-bottom: 2%;
+}
