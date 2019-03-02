@@ -28,6 +28,12 @@ _3rd Rank in the district with 99.72 percentile (Rajasthan Board)_
 </div>
 <hr>
 
+## Skills
+- **Programming Skills:** Swift, Kotlin, C#, C++/C, Python, Shell
+- **Web Development Skills:** Bootstrap, Javascript, SQL, Markdown, Jekyll
+- **Other Technology and Tools:** Git, Xcode, Android Studio, Sketch App, Firebase, Microsoft Visual Studio, Microsoft SQL Server, Atom
+<hr>
+
 ## Technical Experiences
 
 ### Google Summer of Code (2018)
@@ -91,11 +97,28 @@ Campus Experts are students who have taken the time to improve their local tech 
 **[The Business Club, IIT (BHU) Varanasi](https://www.linkedin.com/company/cefiitbhu/)**
 <br>
 I was Joint Secretary for 2017-18 session. As a Joint Secretary, I organized workshops, events and talks in campus.
+
 The club aims to take the concept of economics and finance down to every single individual in the student community since 'Knowledge is Power'​. The value of this knowledge lies in its ability to provide them with a new and useful way of thinking about the world in which we live.
 <br>
 <div class="resume-footer">
 <i class="fa fa-map-marker"></i>&nbsp; IIT Varanasi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; May 2017 - April 2018 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://www.facebook.com/bizclub.iitbhu">Club Facebook Page</a>
 </div>
+<hr>
+
+## Achievement
+- Awarded with **INSPIRE AWARD** by [Department of Science and Technology (DST), Govt. of India](http://www.dst.gov.in/)
+
+
+- Winner of [FOSSASIA Advance Developer Program](https://fossasia.org/adp) 2018-19
+  - Made regular contribution to the FOSSASIA projects as team members in an official role.
+  - Become mentors for newcomers in the community participating in [CodeHeat](https://codeheat.org/) and [Google Code-In](https://codein.withgoogle.com/).
+  - Received travel funding of 600 SGD to participate in [FOSSASIA Summit 2019](https://2019.fossasia.org/) and free ticket to the summit and social events.
+  - Speaker at Open Tech Summit, delivered two talks.
+  <br>
+<div class="resume-footer">
+<i class="fa fa-map-marker"></i>&nbsp; Remote &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; September 2018 - March 2018 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://gist.github.com/jogendra/5f25a6fe1f1763ec6c9ec58e30eb0910">Project Report</a>
+</div>
+
 <hr>
 
 ## Mentorship/Volunteering
@@ -108,7 +131,7 @@ The club aims to take the concept of economics and finance down to every single 
 
 <hr>
 
-## Courses
+## Online Courses
 - [Neural Networks and Deep Learning by deeplearning.ai on Coursera](https://www.coursera.org/account/accomplishments/verify/5V5QZ4BYB3A9)
 - Developing Apps for iOS(CS193p) - Stanford University
 - iOS 10 and Xcode 8 - Complete Swift 3 & Objective-C Course on Udemy
