@@ -127,7 +127,7 @@ I was Joint Secretary for 2017-18 session. As a Joint Secretary, I organized wor
 
 ## Mentorship/Volunteering
 - #### [Google Summer of Code 2019](https://summerofcode.withgoogle.com/)
-I will be mentoring Google Summer of Code (2019) students for [FOSSASIA](https://summerofcode.withgoogle.com/organizations/6623088137994240/)
+I am mentoring Google Summer of Code (2019) students for [FOSSASIA](https://summerofcode.withgoogle.com/organizations/6623088137994240/)
 
 - #### [Google Code-In 2018](https://codein.withgoogle.com/)
 As a Mentor, I interacted with 800+ tasks on Google Code-In dashboard and reviewed 150+ pull requests on GitHub for FOSSASIA. I was the most active mentor for FOSSASIA.
