@@ -71,10 +71,11 @@ I would suggest you make proposal in a google doc which you can edit anytime. Ma
 *   **Check the Grammar before submitting** - Mentors know that students come from very different places and it is not necessary to be proposal in good English, no mentor will mind that but check your punctuation and use a spellchecker like [Grammarly](https://grammarly.com/).
 *   **Submit your draft proposal early** - Submit your draft proposal early so that mentor can give their feedback before final submission and ask you questions or request more detail on aspects of your proposal. Google allows you to edit the draft as many times as you wish before the application deadline.
 *   **Quality > Quantity** - You can submit up to three proposals to one organization or different organizations, it's up to you but I would suggest you to submit less proposals but make sure they are the best.
+* **Describe your proposal, not project** - Use the abstract section to briefly describe your proposal ideas than the project itself. The project in GSoC sense is the actual work you will be doing and not the organization project. Your mentor know very well what your project is.
 *   **Be proactive** - Mentors are more likely to select students that openly discuss the existing ideas and/or propose their own. It is a bad idea to just submit your idea only on the Google web site without discussing it because it won't be noticed.
 *   **Do not sit back after submitting the proposal** - Keep working on the bug fixes, this could influence their decision. Try to learn more about the codebase. Selecting or not selecting is in organization mentor hand but keep working, that's what is in your hand.
 *   **We're long-term people looking for long-term people** - Students that are likely to disappear after GSoC are less likely to be selected. This is because there is no point in developing something that won't be maintained. And moreover, one scope of GSoC is to bring new developers to the community. Show them that you are long-term people.
-*   **Keep it short** - Do NOT make a very lengthy proposal, mentors have limited time and many proposals to review. Keep your proposal short and informative.
+*   **Keep it short** - Do NOT make a very lengthy proposal, mentors have limited time and many proposals to review. Keep your proposal short and informative. Your lengthy proposal will look like filling space with noise. Keep your proposal DRY (Don't Repeat Yourself)
 
 Here are my proposals that I submitted to the FOSSASIA organization:
 
