@@ -5,7 +5,7 @@ description: Jogendra Kumar is a software developer who loves open source.
 permalink: /resume/
 ---
 
-<i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="/assets/resume/jogendra_resume.pdf">Download/View Resume (Last Updated on 24 January 2019)</a>
+<i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="/assets/resume/jogendra_resume.pdf">Download/View Resume (Last Updated on 08 April 2019)</a>
 
 <hr>
 
