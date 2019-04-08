@@ -1,6 +1,6 @@
 ---
 title: "Intro to Git/GitHub"
-subtitle: "A introduction to basic version control Git and programs by GitHub"
+subtitle: "A introduction to basic version control system Git and programs by GitHub"
 event: "HaxaHive Hackathon 2019"
 event-url: "https://hexahive.uniphyd.club/"
 location: "Vadodara, Gujarat, India"
