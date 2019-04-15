@@ -83,6 +83,32 @@ Robots, Help Desks and Chatbots
 All the projects done by me can be found on [projects page](/projects/).
 <hr>
 
+## Open Source Contributions
+<!-- Include the library. -->
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+<div class="calendar">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+</div>
+
+<script>
+    <!-- GitHubCalendar(".calendar", "jogendra"); -->
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "jogendra", { responsive: true });
+</script>
+
+<hr>
+
 ## Leadership Experiences
 - #### GitHub Campus Expert
 **[GitHub Education](https://education.github.com/)**

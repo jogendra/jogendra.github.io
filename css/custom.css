@@ -91,3 +91,6 @@ ul.actions li {
   padding-left: 2%; */
   margin-bottom: 2%;
 }
+.contrib-number {
+  font-weight: 500;
+}
