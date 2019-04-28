@@ -187,12 +187,6 @@ Mentored participants for [HealthLedger](https://github.com/jogendra/HealthLedge
     <i class="fa fa-map-marker"></i>&nbsp; Remote &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; January 2019 - Fabuary 2019
     </div>
 
-- #### [GirlScript Summer of Code (GSSoC) 2019](https://www.gssoc.tech/)
-  I am mentoring GSSoC participants for [Connect-Me](https://github.com/fossasia/Connect-Me) project.
-  <br>
-    <div class="resume-footer">
-    <i class="fa fa-map-marker"></i>&nbsp; Remote &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; Fabuary 2019 - May 2019
-    </div>
 - #### [HexaHive Hackathon](https://twitter.com/hexa_hive)
 Mentored hackathon participants.
 <br>
