@@ -29,7 +29,7 @@ _3rd Rank in the district with 99.72 percentile (Rajasthan Board)_
 <hr>
 
 ## Skills
-- **Programming Skills:** Swift, Kotlin, C#, C++/C, Python, Shell
+- **Programming Skills:** Swift, C#, C++/C, Python, Shell
 - **Web Development Skills:** Bootstrap, Javascript, SQL, Markdown, Jekyll
 - **Other Technology and Tools:** Git, Xcode, Android Studio, Sketch App, Firebase, Microsoft Visual Studio, Microsoft SQL Server, Atom
 <hr>
@@ -46,7 +46,7 @@ _3rd Rank in the district with 99.72 percentile (Rajasthan Board)_
 <i class="fa fa-map-marker"></i>&nbsp; Remote &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; 14 May - 06 August, 2018 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://gist.github.com/jogendra/e51cf846e2637b0aa26451789c2f28e8">Project Report</a>
 </div>
 
-### iOS Developer
+### iOS Developer and Maintainer
 **[FOSSASIA](https://fossasia.org/)**
 <br>
 Maintaining, designing and developing new features for the iOS Apps in Swift and managing Open Source contributions for the following projects:
@@ -117,6 +117,15 @@ Campus Experts are students who have taken the time to improve their local tech 
 <br>
   <div class="resume-footer">
   <i class="fa fa-map-marker"></i>&nbsp; IIT Varanasi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; January 2019 - Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://githubcampus.expert/jogendra/">Campus Expert Link</a>
+  </div>
+
+- #### Sketch Ambassador
+**[Sketch Varanasi](https://www.sketch.com/community/groups/varanasi/)**
+<br>
+Meetup for designers working in Sketch, the lightweight, modern, and powerful vector design software from Bohemian Coding. We’re interested in sharing knowledge, tips, workflow, projects made in Sketch, our favorite plugins, hopes for future features and bug fixes, and just general advocacy for this cool software.
+<br>
+  <div class="resume-footer">
+  <i class="fa fa-map-marker"></i>&nbsp; Varanasi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; May 2019 - Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://www.eventbrite.com/o/sketch-varanasi-20146035958">Eventbrite</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://www.facebook.com/groups/377371276453139/">Facebook</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://www.sketch.com/community/groups/varanasi/">Sketch Varanasi</a>
   </div>
 
 - #### Joint Secretary
