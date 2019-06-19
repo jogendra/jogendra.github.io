@@ -16,6 +16,7 @@ permalink: :title
 cover: "/assets/page-cover.png"
 logo: "/assets/jog-logo.png"
 ga_tracking_id: "UA-108089911-1"
+google_ad_client: "ca-pub-9335105257262766"
 
 # Build settings
 markdown: kramdown
