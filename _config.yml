@@ -8,7 +8,7 @@ description: >
   A personal website about me and technical things I find useful.
 baseurl: ""
 url: "https://jogendra.github.io/"
-twitter_username: imjog24
+twitter_username: jogendrafx
 github_username:  jogendra
 disqus_baseurl: "https://jogendra.github.io/"
 disqus_shortname: https-jogendra-github-io
@@ -64,7 +64,7 @@ collections:
 social:
   - name: Twitter
     icon: twitter
-    username: imjog24
+    username: jogendrafx
     url: https://twitter.com/jogendrafx
     desc: Follow me on Twitter
     share: true
