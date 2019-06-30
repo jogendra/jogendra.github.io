@@ -5,6 +5,8 @@ description: Jogendra Kumar is a software developer who loves open source.
 permalink: /resume/
 ---
 
+<br>
+I am Open for Software Engineering role. Please reach me out on the contacts given on [About](/about/) page. Resume can be found below.<br><br>
 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="/assets/resume/jogendra_resume.pdf">Download/View Resume (Last Updated on 31 May 2019)</a>
 
 <hr>
@@ -29,7 +31,7 @@ _3rd Rank in the district with 99.72 percentile (Rajasthan Board)_
 <hr>
 
 ## Skills
-- **Programming Skills:** Swift, C#, C++/C, Python, Shell
+- **Programming Skills:** Swift, C++/C, C#, Python, Shell
 - **Web Development Skills:** Bootstrap, Javascript, SQL, Markdown, Jekyll
 - **Other Technology and Tools:** Git, Xcode, Android Studio, Sketch App, Firebase, Microsoft Visual Studio, Microsoft SQL Server, Atom
 <hr>
