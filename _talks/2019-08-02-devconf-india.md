@@ -4,5 +4,5 @@ subtitle: "Talk focus on licensing and other legal side of the Open Source that 
 event: "DevConf India 2019"
 event-url: "https://devconf.info/in"
 location: "Bengaluru, India"
-slides:
+slides: "https://speakerdeck.com/jogendra/the-legal-side-of-open-source"
 ---
