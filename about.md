@@ -6,8 +6,7 @@ permalink: /about/
 ---
 <br>
 
-Hi, I’m Jogendra, pre-final year student at **Indian Institute of Technology (BHU) Varanasi**. I am an iOS Developer, [GitHub Campus Expert](https://githubcampus.expert/jogendra/) and an active Open Source contributor.
-I also have experience in developing Android, Web and Windows Apps as well as in Machine/Deep Learning and Blockchain. Currently, I am focusing on Competitive Programming. I love/know to design with [Sketch](https://www.sketchapp.com/).
+Hi, I’m Jogendra, final year student at **Indian Institute of Technology (BHU) Varanasi**. I am an iOS / Web Developer, [GitHub Campus Expert](https://githubcampus.expert/jogendra/) and an active Open Source contributor. I love/know to design with [Sketch](https://www.sketchapp.com/).
 
 In the past, I was a Google Summer of Code (2018) Student for FOSSASIA, an iOS Developer Intern at [Wheelstreet Inc.](https://www.wheelstreet.com/), and a Software Developer Intern at [Vertext Infosoft](https://vertexinfosoft.com/). I mentored several Open Source Programs including Google Code-In 2018 and mentoring Google Summer of Code (2019) students. I am a maintainer and core contributor to [FOSSASIA](https://fossasia.org/).
 
