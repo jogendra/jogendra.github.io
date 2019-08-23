@@ -33,7 +33,7 @@ _3rd Rank in the district with 99.72 percentile (Rajasthan Board)_
 ## Skills
 - **Programming Skills:** Swift, C++/C, C#, Python, Shell
 - **Web Development Skills:** Bootstrap, Javascript, SQL, Markdown, Jekyll
-- **Other Technology and Tools:** Git, Xcode, Android Studio, Sketch App, Firebase, Microsoft Visual Studio, Microsoft SQL Server, Atom
+- **Other Technology and Tools:** Git, Xcode, Sketch App (Design), Firebase, Postman, Docker/Kubernetes 
 <hr>
 
 ## Technical Experiences
@@ -85,49 +85,14 @@ Robots, Help Desks and Chatbots
 All the projects done by me can be found on [projects page](/projects/).
 <hr>
 
-## Open Source Contributions
-<!-- Include the library. -->
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-></script>
-
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link
-   rel="stylesheet"
-   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
-
-<!-- Prepare a container for your calendar. -->
-<div class="calendar">
-    <!-- Loading stuff -->
-    Loading the data just for you.
-</div>
-
-<script>
-    <!-- GitHubCalendar(".calendar", "jogendra"); -->
-    // or enable responsive functionality
-    GitHubCalendar(".calendar", "jogendra", { responsive: true });
-</script>
-
-<hr>
-
 ## Leadership Experiences
 - #### GitHub Campus Expert
 **[GitHub Education](https://education.github.com/)**
 <br>
-Campus Experts are students who have taken the time to improve their local tech community. To become a Campus Expert, I have completed hours of training, with guidance from GitHub and partners. I have committed myself to develop the community and opening doors for students who want to be a part of it.
+Campus Experts are students who have taken the time to improve their local tech community. As a campus expert, helping local tech communities with mentorship, organizing hackathons, workshops with support from GitHub.
 <br>
   <div class="resume-footer">
   <i class="fa fa-map-marker"></i>&nbsp; IIT Varanasi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; January 2019 - Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://githubcampus.expert/jogendra/">Campus Expert Link</a>
-  </div>
-
-- #### Sketch Ambassador
-**[Sketch Varanasi](https://www.sketch.com/community/groups/varanasi/)**
-<br>
-Meetup for designers working in Sketch, the lightweight, modern, and powerful vector design software from Bohemian Coding. We’re interested in sharing knowledge, tips, workflow, projects made in Sketch, our favorite plugins, hopes for future features and bug fixes, and just general advocacy for this cool software.
-<br>
-  <div class="resume-footer">
-  <i class="fa fa-map-marker"></i>&nbsp; Varanasi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp; May 2019 - Present &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://www.eventbrite.com/o/sketch-varanasi-20146035958">Eventbrite</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://www.facebook.com/groups/377371276453139/">Facebook</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i>&nbsp; <a href="https://www.sketch.com/community/groups/varanasi/">Sketch Varanasi</a>
   </div>
 
 - #### Joint Secretary
@@ -144,6 +109,7 @@ I was Joint Secretary for 2017-18 session. As a Joint Secretary, I organized wor
 - Member of Tech Team [Technex](https://www.facebook.com/technexiitbhu/) 2017 and Tech Team [Spardha](https://www.facebook.com/Spardha.IIT.BHU/) 2017
 - Tech Lead of [MUN IIT(BHU) Varanasi](https://www.facebook.com/iitbhumun/) 2017
 - Part of Core Team of [Hult Prize](http://www.hultprizeat.com/) [BHU](https://www.facebook.com/hult.bhu/) 2016 and 2017.
+- Technical Head, Jigyasa 2017 (Annual departmental fest of Department of Physics, IIT(BHU) Varanasi)
 <hr>
 
 ## Achievements
@@ -153,7 +119,6 @@ I was Joint Secretary for 2017-18 session. As a Joint Secretary, I organized wor
 - Winner of [FOSSASIA Advance Developer Program](https://fossasia.org/adp) 2018-19
   - Made regular contribution to the FOSSASIA projects as team members in an official role.
   - Become mentors for newcomers in the community participating in [CodeHeat](https://codeheat.org/) and [Google Code-In](https://codein.withgoogle.com/).
-  - Received travel funding of 600 SGD to participate in [FOSSASIA Summit 2019](https://2019.fossasia.org/) and free ticket to the summit and social events.
   - Speaker at Open Tech Summit, delivered two talks.
   <br>
   <div class="resume-footer">
