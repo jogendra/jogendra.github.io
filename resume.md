@@ -7,7 +7,7 @@ permalink: /resume/
 
 <br>
 I am Open for Software Engineering role. Please reach me out on the contacts given on [About](/about/) page. Resume can be found below.<br><br>
-<i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="/assets/resume/jogendra_resume.pdf">Download/View Resume (Last Updated on 14 July 2019)</a>
+<i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="/assets/resume/jogendra_resume.pdf">Download/View Resume (Last Updated on 29 November 2019)</a>
 
 <hr>
 
@@ -31,9 +31,9 @@ _3rd Rank in the district with 99.72 percentile (Rajasthan Board)_
 <hr>
 
 ## Skills
-- **Programming Skills:** Swift, C++/C, C#, Python, Shell
+- **Programming Skills:** Swift, C++, C#, Python, Shell
 - **Web Development Skills:** Bootstrap, Javascript, SQL, Markdown, Jekyll
-- **Other Technology and Tools:** Git, Xcode, Sketch App (Design), Firebase, Postman, Docker/Kubernetes 
+- **Other Technology and Tools:** Git, Xcode, SketchApp (Design), Firebase, Postman 
 <hr>
 
 ## Technical Experiences
@@ -129,7 +129,7 @@ I was Joint Secretary for 2017-18 session. As a Joint Secretary, I organized wor
 
 ## Mentorship/Volunteering
 - #### [Google Summer of Code 2019](https://summerofcode.withgoogle.com/)
-I am mentoring Google Summer of Code (2019) students for [FOSSASIA](https://summerofcode.withgoogle.com/organizations/6623088137994240/)
+Mentored Google Summer of Code (2019) students for [FOSSASIA](https://summerofcode.withgoogle.com/organizations/6623088137994240/)
 
 - #### [Google Code-In 2018](https://codein.withgoogle.com/)
 As a Mentor, I interacted with 800+ tasks on Google Code-In dashboard and reviewed 150+ pull requests on GitHub for FOSSASIA. I was the most active mentor for FOSSASIA.
