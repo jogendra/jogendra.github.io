@@ -4,5 +4,5 @@ subtitle: "Talk focus on SUSI.AI iOS client"
 event: "FOSSASIA Open Tech Summit 2020"
 event-url: "https://summit.fossasia.org/"
 location: "Singapore, Asia"
-slides: ""
+slides:
 ---

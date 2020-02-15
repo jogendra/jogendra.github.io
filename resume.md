@@ -10,7 +10,7 @@ I am Open for Software Engineering role. Please reach me out on the contacts giv
 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="/assets/resume/jogendra_resume.pdf">Download/View Resume (Last Updated on 29 November 2019)</a>
 
 <hr>
-
+<!--
 ## Education
 **Indian Institute of Technology (Banaras Hindu University) Varanasi, India**<br>
 Bachelors and Masters in Engineering Physics (Integrated Dual Degree)
@@ -33,7 +33,7 @@ _3rd Rank in the district with 99.72 percentile (Rajasthan Board)_
 ## Skills
 - **Programming Skills:** Swift, C++, C#, Python, Shell
 - **Web Development Skills:** Bootstrap, Javascript, SQL, Markdown, Jekyll
-- **Other Technology and Tools:** Git, Xcode, SketchApp (Design), Firebase, Postman 
+- **Other Technology and Tools:** Git, Xcode, SketchApp (Design), Firebase, Postman
 <hr>
 
 ## Technical Experiences
@@ -175,4 +175,4 @@ Mentored hackathon participants.
 ## Online Courses
 - [Neural Networks and Deep Learning by deeplearning.ai on Coursera](https://www.coursera.org/account/accomplishments/verify/5V5QZ4BYB3A9)
 - Developing Apps for iOS(CS193p) - Stanford University
-- iOS 10 and Xcode 8 - Complete Swift 3 & Objective-C Course on Udemy
+- iOS 10 and Xcode 8 - Complete Swift 3 & Objective-C Course on Udemy -->

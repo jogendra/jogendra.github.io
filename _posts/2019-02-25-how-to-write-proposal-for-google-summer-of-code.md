@@ -82,7 +82,7 @@ Here are my proposals that I submitted to the FOSSASIA organization:
 
 
 1. [Enhancement to SUSI iOS Project](https://docs.google.com/document/d/1iR7-LCF6rbTaZglPxOOwNPBTvtXuIZwWJiQMlSYlOrY/edit?usp=sharing) (Accepted)
-2. [Phimpme iOS Project](https://docs.google.com/document/d/1emFcE0cMTButYEzoKZGScOVEPHHqMv6_mrOIwUxmJkA/edit?usp=sharing) (Not Accepted - Love is one-sided some time. To be honest, I gave a lot more time making this proposal and did good research than the accepted proposal above. It was a new proposed project. You can see how much it is important to know about the priority of the project for you are going to submit the proposal. Pro tips: contact the mentor earlier, they can tell you what are their priorities and what exactly they are looking for!)
+2. [Phimpme iOS Project](https://docs.google.com/document/d/1emFcE0cMTButYEzoKZGScOVEPHHqMv6_mrOIwUxmJkA/edit?usp=sharing) (Not Accepted - to be honest, I gave a lot more time making this proposal and did good research than the accepted proposal above. It was a new proposed project. You can see how much it is important to know about the priority of the project for you are going to submit the proposal. Pro tips: contact the mentor earlier, they can tell you what are their priorities and what exactly they are looking for!)
 
 ### Important Links
 
