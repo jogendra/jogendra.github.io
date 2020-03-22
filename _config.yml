@@ -32,7 +32,7 @@ defaults:
 
 
 # External gems
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
