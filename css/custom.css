@@ -94,3 +94,10 @@ ul.actions li {
 .contrib-number {
   font-weight: 500;
 }
+
+.site-header-container .has-cover img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
