@@ -101,3 +101,7 @@ ul.actions li {
   border-radius: 50%;
   border: 3px solid white;
 }
+
+.home a, .navigation a, .site-footer a {
+  color: #333;
+}
