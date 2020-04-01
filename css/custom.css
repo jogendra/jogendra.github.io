@@ -105,3 +105,21 @@ ul.actions li {
 .home a, .navigation a, .site-footer a {
   color: #333;
 }
+
+.hljs, .hljs-tag, .css .hljs-rule, .css .hljs-value, .aspectj .hljs-function, .css .hljs-function .hljs-preprocessor, .hljs-pragma {
+  color: #666;
+}
+.hljs-variable {
+  color: #333;
+}
+.hljs {
+  background-color: #f6f8fa;
+}
+
+code {
+  background-color: #f6f8fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
