@@ -107,13 +107,27 @@ ul.actions li {
 }
 
 .hljs, .hljs-tag, .css .hljs-rule, .css .hljs-value, .aspectj .hljs-function, .css .hljs-function .hljs-preprocessor, .hljs-pragma {
-  color: #666;
+  color: #444444;
 }
-.hljs-variable {
-  color: #333;
+
+.hljs-built_in {
+ color: currentColor;
 }
+
 .hljs {
   background-color: #f6f8fa;
+}
+
+.hljs-pseudo {
+  color: blue;
+}
+
+.hljs-string {
+  color: #c71585;
+}
+
+.hljs-tag .hljs-value, .hljs-code, .hljs-title, .css .hljs-class, .hljs-class .hljs-title:last-child {
+  color: green;
 }
 
 code {
@@ -122,4 +136,9 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
+}
+
+code.language-plain {
+  width: 100%;
+  padding: 10px;
 }
