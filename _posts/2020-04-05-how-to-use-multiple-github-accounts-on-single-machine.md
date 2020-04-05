@@ -142,6 +142,8 @@ Use key **_id_rsa_personal_** and follow the same step as work account for perso
 
 ### Step 3: Update git global configuration
 
+_Ignore this step if you are going for **Step 4**_
+
 Git global configuration file should be aware of all of your GitHub accounts. Run this command to edit the global config file:
 
 ```bash
