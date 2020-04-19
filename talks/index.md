@@ -59,10 +59,10 @@ permalink: /talks/
           {% endif %}
           Slides</a>
         </span>
+        &nbsp; &nbsp;
       {% endif %}
 
       {% if talks.video %}
-        &nbsp; &nbsp;
         <span class="talks-resource"><i class="fa fa-file-video-o" aria-hidden="true"></i>&nbsp;&nbsp; <a href="{{ talks.video }}">Video</a></span>
       {% endif %}
 
