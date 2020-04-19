@@ -143,3 +143,13 @@ code.language-plain {
   padding: 10px;
   overflow-y: scroll;
 }
+
+.talks {
+  border: 1px solid #666;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.talks-hr {
+  margin-top: 0;
+}

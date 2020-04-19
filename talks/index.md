@@ -12,11 +12,13 @@ permalink: /talks/
   {% if talks.date > site.time %}
     {% if forloop.first %}
       <h2 class="talks-section" id="upcoming">Upcoming</h2>
+      <hr class="talks-hr">
     {% endif %}
   {% else %}
     {% assign currentyear = talks.date | date: "%Y" %}
     {% if currentyear != previousyear %}
       <h2 class="talks-section" id="y{{ talks.date | date: "%Y"}}">{{ currentyear }}</h2>
+      <hr class="talks-hr">
       {% assign previousyear = currentyear %}
     {% endif %}
   {% endif %}
