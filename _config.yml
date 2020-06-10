@@ -29,7 +29,7 @@ defaults:
     scope:
       path: ""
     values:
-      author: "Jogendra Kumar"
+      author: "Jogendra"
 
 
 # External gems
