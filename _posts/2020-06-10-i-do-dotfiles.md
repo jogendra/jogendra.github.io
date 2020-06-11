@@ -19,6 +19,8 @@ Dotfiles are files and folders on Unix-like systems starting with `.` (dot) that
 
 Why dotfiles start with `.` (dot) is an interesting example of **a bug that has become a feature**. Checkout interesting reads on [Why do hidden files in Unix begin with a dot?](https://www.reddit.com/r/linux/comments/at05xh/why_do_hidden_files_in_unix_begin_with_a_dot/egyj6lr/).
 
+<img class="fullimg" alt="dotfiles" src="https://user-images.githubusercontent.com/20956124/84434654-14866500-ac4e-11ea-8de3-413870e37893.png">
+
 ### GitHub Codespaces and Dotfiles
 
 Recently GitHub announced Codespaces. According to GitHub, Codespaces uses your dotfiles repository on GitHub to personalize every new codespace that you create. Anyone can create a dotfiles repository to personalize Codespaces for their user account. If your user account on GitHub owns a public repository named dotfiles, GitHub automatically uses this repository to personalize your codespace environment. Read more about this [here](https://help.github.com/en/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account).
