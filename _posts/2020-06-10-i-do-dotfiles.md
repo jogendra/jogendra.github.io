@@ -64,6 +64,54 @@ There are a few special files in the hierarchy:
 - **topic/install.sh**: Any file named `install.sh` is executed when you run `installers/install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
 - **topic/*.symlink**: Any file ending in `*.symlink` gets symlinked into your `$HOME`. This is so you can keep all of those versions in your dotfiles but still keep those autoloaded files in your home directory. These get symlinked in when you run `installers/bootstrap`.
 
+### The Components
+
+#### AppleScripts
+
+AppleScript is a scripting language developed by Apple to help people automate their work processes on the MacOS. AppleScript is an extremely simple, almost English-like language, but automation it does is pure gold. I sometimes write AppleScripts to automate stuff on my mac where it involves a lot of clicks or similar and I use them using shell aliases.
+Here is a simple AppleScript that I wrote to open iTerm tabs with right directory for all work-related projects.
+
+```AppleScript
+property examplePath1 : "~/Projects/pathto/directory1"
+property examplePath2 : "~/Projects/pathto/directory2"
+property examplePath3 : "~/Projects/V15/directory3"
+property pathList : {examplePath1, examplePath2, examplePath3}
+ 
+on run_iterm()
+   tell application "iTerm"
+       set newWindow to current window
+       -- if you want to open repositories in new window
+       -- uncomment the line below and comment linne above
+       -- set newWindow to (create window with default profile)
+       tell current session of newWindow
+           repeat with path in pathList
+               tell newWindow
+                   create tab with default profile
+               end tell
+               write text "cd " & path
+           end repeat
+           delay 0.6
+           select first tab of newWindow
+       end tell
+   end tell
+end run_iterm
+ 
+if application "iTerm" is running then
+   run_iterm()
+else
+   activate application "iTerm"
+   run_iterm()
+end if
+```
+
+I simply use it with a shell alias:
+
+```bash
+alias workinit="osascript ~/dotfiles/AppleScripts/work_init.scpt"
+```
+
+I discovered AppleScript very recently. I will be writing a lot more of them and automate the stuff.
+
 ### Interesting/Helpful Reads
 
 - [Configuring your login sessions with dotfiles](http://mywiki.wooledge.org/DotFiles)
