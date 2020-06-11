@@ -153,3 +153,17 @@ code.language-plain {
 .talks-hr {
   margin-top: 0;
 }
+
+.sideimg {
+  width: 100% !important;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .sideimg {
+    width: 25% !important;
+    border-radius: 8px;
+    padding: 2px;
+  }
+}

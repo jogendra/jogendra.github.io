@@ -51,6 +51,8 @@ My dotfiles contain freshly brewed configuration files for various CLI applicati
 
 When I was looking for a way to organize my dotfiles, I found [Zach Holman’s dotfiles](https://github.com/holman/dotfiles) way of organizing the dotfiles is the best which is called **Topical organization** which is organizing the different parts of dotfiles in directories, each entitled to a specific subject. By topical organization, all AppleScripts go inside the `AppleScript/` directory, git settings are in a `git/` directory, and so on. Everything's built around topic areas. If you're adding a new area to your forked dotfiles — say, _"vscode"_ — you can simply add a vscode directory and put files in there. Anything with an extension of `.zsh` will get automatically included in your shell. Anything with an extension of _`.symlink`_ will get symlinked without extension into `$HOME` when you run `installers/bootstrap`.
 
+<img class="sideimg" align="right" alt="" src="https://user-images.githubusercontent.com/20956124/84314457-b55d1d80-ab85-11ea-9bed-6009dcb8be18.png">
+
 There are a few special files in the hierarchy:
 
 - **bin/**: Anything in `bin/` will get added to your `$PATH` and be made available everywhere.
