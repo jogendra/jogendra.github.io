@@ -175,6 +175,65 @@ yes | brew upgrade
 brew cleanup
 ```
 
+#### Git Configurations
+
+My [`git/`](https://github.com/jogendra/dotfiles/tree/master/git) contains [`.gitconfig`](https://github.com/jogendra/dotfiles/blob/master/git/gitconfig) and some bash scripts related to git. I hate the idea of creating short aliases for every single basic git commands like `ga` for `git add .`, `gc` for `git commit` etc. They create confusion instead of saving time. I use git aliases for little longer git commands or git processes that involve more than two series of commands. I simply put them in a bash file and use them as aliases. You can simply use them according to your convenience.
+I have **hardlinked** my dotfiles `.gitconfig` with my system’s global `.gitconfig`. They are **hardlinked** so that I can use the same in my other systems.
+
+A **symbolic (symlink)** or **soft link** is an actual link to the original file, whereas a **hard link** is a mirror copy of the original file. If you delete the original file, the soft link has no value, because it points to a non-existent file, symlinked file will be useless. But in the case of hard link, it is entirely opposite. Even if you delete the original file, the hard link will still has the data of the original file. Because hard link acts as a mirror copy of the original file. In other words, indode number for soft linked files are different (point to different inode) but on the other hand inode number for hard linked files are same (point to same inode). In unix-like systems, **Inode** is a data-structure that represents a file or a directory. An **Inode number** is a unique number given to an inode.
+
+You can simply create a hard link by running:
+
+```bash
+ln ~/.gitconfig gitconfig
+```
+
+OR if you want to create a soft link instead of a hard link, just use `-s` option.
+
+```bash
+ln -s ~/.gitconfig gitconfig
+```
+
+You can do the same for other git configuration files like `.gitignore`, `.gitattributes` etc.
+
+Please be careful before putting any sensitive data into git configs files that you are going to put public on GitHub. You can refer to _**Securing the dotfiles**_ section of this blog.
+
+My `.gitconfig` look like this:
+
+```bash
+[user]
+    name = jogendra
+    email = jogendrafx@gmail.com
+
+[mergetool]
+    keepBackup = false
+
+[alias]
+    parent = rev-parse --abbrev-ref --symbolic-full-name @{u}
+    last = log -1 HEAD
+    unstage = reset HEAD --
+    pr = !sh ~/dotfiles/git/pull_request.sh
+    remotes = remote -v
+    syncu = !sh ~/dotfiles/git/sync_with_upstream.sh
+    diffall = !sh ~/dotfiles/git/git_unpushed.sh
+    plog = !sh ~/dotfiles/git/plog.sh
+    lazy = !lazygit
+    contributors = shortlog --summary --numbered
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+
+[commit]
+    gpgsign = false
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+```
+
 ### Interesting/Helpful Reads
 
 - [Configuring your login sessions with dotfiles](http://mywiki.wooledge.org/DotFiles)
