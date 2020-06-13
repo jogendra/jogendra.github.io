@@ -132,6 +132,7 @@ ul.actions li {
 
 code {
   background-color: #f6f8fa;
+  max-height: 30em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -171,4 +172,8 @@ code.language-plain {
 .fullimg {
   width: 100% !important;
   border-radius: 4px;
+}
+
+.hljs-variable, .hljs-params, .hljs-class .hljs-title, .hljs-aspect .hljs-title {
+  color: #0f2f91;
 }

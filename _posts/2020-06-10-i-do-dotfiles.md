@@ -69,12 +69,12 @@ There are a few special files in the hierarchy:
 #### AppleScripts
 
 AppleScript is a scripting language developed by Apple to help people automate their work processes on the MacOS. AppleScript is an extremely simple, almost English-like language, but automation it does is pure gold. I sometimes write AppleScripts to automate stuff on my mac where it involves a lot of clicks or similar and I use them using shell aliases.
-Here is a simple AppleScript that I wrote to open iTerm tabs with right directory for all work-related projects.
+Here is a simple AppleScript that I wrote to open _iTerm2_ tabs with right directory for all work-related projects.
 
 ```AppleScript
 property examplePath1 : "~/Projects/pathto/directory1"
 property examplePath2 : "~/Projects/pathto/directory2"
-property examplePath3 : "~/Projects/V15/directory3"
+property examplePath3 : "~/Projects/pathto/directory3"
 property pathList : {examplePath1, examplePath2, examplePath3}
  
 on run_iterm()
@@ -111,6 +111,69 @@ alias workinit="osascript ~/dotfiles/AppleScripts/work_init.scpt"
 ```
 
 I discovered AppleScript very recently. I will be writing a lot more of them and automate the stuff.
+
+#### Homebrew and Homebrew Cask
+
+Homebrew is very essential for machines running macOS. It helps you install packages and tools in an easy way through the CLI. Homebrew can also help install your apps. You won't need to manually download and install packages and tools anymore. [Homebrew Cask](https://github.com/Homebrew/homebrew-cask) has the power to install GUI applications in macOS from the command line.
+
+```bash
+brew cask install iterm2
+brew cask install charles
+brew cask install firefox
+brew cask install google-chrome
+brew cask install spotify
+```
+
+Homebrew does not support downloading applications from the App Store. To install App Store apps using CLI, you can use a tool called [mas](https://github.com/mas-cli/mas).
+
+My [`brew/`](https://github.com/jogendra/dotfiles/tree/master/brew) contains an [install script](https://raw.githubusercontent.com/jogendra/dotfiles/master/brew/install.sh) that firstly checks whether homebrew is already installed or not. If not, download it otherwise get to next part. Next, I have listed some essential brews and casks that I use in my day to day dev life, which will be installed. And at last, it runs update and up-gradation following by cleanup.
+
+```bash
+#!/usr/bin/env bash
+
+# Abort on error
+set -e
+
+echo "Checking if Homebrew is already installed..."; 
+
+# Checks if Homebrew is installed
+if test ! $(which brew); then
+  echo "Installing Homebrew...";
+  yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+else
+  echo "Homebrew is already installed...";
+fi
+
+# Install the essential brews
+brew install carthage
+brew install cocoapods
+brew install gettext
+brew install gh
+brew install git
+brew install node
+brew install lazygit
+brew install lsd
+brew install tree
+brew install yarn
+brew install zsh
+brew install zsh-completions
+brew install neovim
+brew install pass
+brew install vim
+
+# Install essential casks
+brew cask install iterm2
+brew cask install charles
+brew cask install firefox
+
+# Update and Upgrade
+echo "Updating and upgrading Homebrew..."; echo;
+yes | brew update
+yes | brew upgrade
+
+# Remove outdated versions from the cellar
+brew cleanup
+```
 
 ### Interesting/Helpful Reads
 
