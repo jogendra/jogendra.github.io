@@ -15,7 +15,7 @@ One of the main advantages/beauty of Unix-like systems is that configurations of
 
 ### What are dotfiles?
 
-Dotfiles are files and folders on Unix-like systems starting with `.` (dot) that control the configuration of applications and shells on your system. Dotfiles are shell scripts that are executed to change the environment of your machine. The **“dotfiles”** name is derived from the configuration files in Unix-like systems that start with a dot (e.g. .zshrc and .gitconfig). For normal users, this indicates these are not regular documents, and by default are hidden in directory listings. You can display dotfiles inside any directory by running `ls -a` command.  [GitHub does dotfiles](https://dotfiles.github.io/) is definitely great place to explore and know more about dotfiles.
+Dotfiles are files and folders on Unix-like systems starting with `.` (dot) that control the configuration of applications and shells on your system. Dotfiles are shell scripts that are executed to change the environment of your machine. The **“dotfiles”** name is derived from the configuration files in Unix-like systems that start with a dot (e.g. _.zshrc_ and _.gitconfig_). For normal users, this indicates these are not regular documents, and by default are hidden in directory listings. You can display dotfiles inside any directory by running `ls -a` command.  [GitHub does dotfiles](https://dotfiles.github.io/) is definitely great place to explore and know more about dotfiles.
 
 Why dotfiles start with `.` (dot) is an interesting example of **a bug that has become a feature**. Checkout interesting reads on [Why do hidden files in Unix begin with a dot?](https://www.reddit.com/r/linux/comments/at05xh/why_do_hidden_files_in_unix_begin_with_a_dot/egyj6lr/).
 
@@ -36,6 +36,18 @@ Mostly, dotfiles are very specific to the individual developer. What works for s
 ### Securing the dotfiles
 
 Dotfiles often contain some private data like plain text passwords and some pieces of information you don’t wanna share publicly. Anything that is a security risk, like files in your `.ssh/` folder, is not a good choice to share using this method. Be sure to double-check your configuration files before publishing them online and triple-check that no API tokens are in your files. You can use [gitattributes](https://git-scm.com/docs/gitattributes) for git related sensitive information. Version controlled folder’s files that contain sensitive information and should not be published are kept secret using package-specific `.gitignore` files.
+
+`git config credential.helper store` is not a very secure way to store your git server passwords. According to [git credential store documentations](https://git-scm.com/docs/git-credential-store), _store_ helper will store your passwords unencrypted on disk, protected only by filesystem permissions. The `~/.git-credentials` file will have its filesystem permissions set to prevent other users on the system from reading it, but will not be encrypted or otherwise protected. So it stores your password as is. So if you are running _macOS_ on your machine, Git allows to use your _keychain_, which is way more secure. To set `osxkeychain` as your git credential helper, run:
+
+```bash
+git config --global credential.helper osxkeychain
+```
+
+If you are runnning _Linux_ on your machine, you can use [`git config credential.helper cache`](https://git-scm.com/docs/git-credential-cache), which stores passwords in your memory. This way stored credentials never touch the disk, and are forgotten after a configurable timeout. To set `cache` as your git credential helper, run:
+
+```bash
+git config --global credential.helper cache
+```
 
 Mistakenly, if you commit sensitive data, such as a password or SSH key into dotfiles Git repository, you can remove it from the history. To entirely remove unwanted files from a repository's history you can use either the [`git filter-branch`](https://git-scm.com/docs/git-filter-branch) command or the [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) (an alternative to `git filter-branch`) open source tool. You can check out GitHub's guide on [Removing sensitive data from a repository](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository).
 
@@ -202,36 +214,39 @@ My `.gitconfig` look like this:
 
 ```bash
 [user]
-    name = jogendra
-    email = jogendrafx@gmail.com
+	name = jogendra
+	email = jogendrafx@gmail.com
 
 [mergetool]
-    keepBackup = false
+	keepBackup = false
 
 [alias]
-    parent = rev-parse --abbrev-ref --symbolic-full-name @{u}
-    last = log -1 HEAD
-    unstage = reset HEAD --
-    pr = !sh ~/dotfiles/git/pull_request.sh
-    remotes = remote -v
-    syncu = !sh ~/dotfiles/git/sync_with_upstream.sh
-    diffall = !sh ~/dotfiles/git/git_unpushed.sh
-    plog = !sh ~/dotfiles/git/plog.sh
-    lazy = !lazygit
-    contributors = shortlog --summary --numbered
+	parent = rev-parse --abbrev-ref --symbolic-full-name @{u}
+	last = log -1 HEAD
+	unstage = reset HEAD --
+	pr = !sh ~/dotfiles/git/pull_request.sh
+	remotes = remote -v
+	syncu = !sh ~/dotfiles/git/sync_with_upstream.sh
+	diffall = !sh ~/dotfiles/git/git_unpushed.sh
+	plog = !sh ~/dotfiles/git/plog.sh
+	lazy = !lazygit
+	contributors = shortlog --summary --numbered
 
 [color]
-    diff = auto
-    status = auto
-    branch = auto
-    ui = true
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
 
 [commit]
-    gpgsign = false
+	gpgsign = false
 
 [core]
-    editor = vim
-    excludesfile = ~/.gitignore
+	editor = vim
+	excludesfile = ~/.gitignore
+	
+[credential]
+	helper = osxkeychain
 ```
 
 ### Interesting/Helpful Reads
