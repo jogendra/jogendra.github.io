@@ -308,6 +308,12 @@ Source ~/.dotfiles/macos/settings
 
 Similarly, I have some of the [defaults](https://github.com/jogendra/dotfiles/blob/master/xcode/defaults) specific to Xcode only are inside [`xcode/`](https://github.com/jogendra/dotfiles/tree/master/xcode).
 
+#### iTerm Configurations
+
+> iTerm2 + Zsh + Oh-my-zsh = :sparkling_heart:
+
+My [`iTerm2/`](https://github.com/jogendra/dotfiles/tree/master/iTerm2) contains [`Default.json`](https://github.com/jogendra/dotfiles/blob/master/iTerm2/Default.json) which is configurations for _iTerm2's_ `Default` profile that includes _color schemes_, _Normal Font_ (I use _JetBrainsMono_), _Non Ascii Font_ (I use _MesloLGSNer_) and lot more. A profile can be imported or can be saved as JSON from **_iTerm2 > Preferences > Selecting Profile name > Clicking Other Actions_**.
+
 ### Some Interesting/Helpful Reads
 
 - [Configuring your login sessions with dotfiles](http://mywiki.wooledge.org/DotFiles)
