@@ -249,6 +249,34 @@ My `.gitconfig` look like this:
 	helper = osxkeychain
 ```
 
+#### ZSH and OH-MY-ZSH
+
+Command-line is arguably one of the most important tools for any power user, so configuring it in the right way is really important. I prefer Z Shell over any other shell. I am using Z Shell from last almost 3 years now and did not found a reason to use another shell. I used to use Bash before that. Zsh is a powerful shell that features some great improvements over Bash like autocompletion, shared command history, themeable prompts, and a lot more. From the customizations perspective, no one can replace ZSH. There are many ZSH configuration frameworks available, [oh-my-zsh](https://ohmyz.sh/) is the most used/popular one. [ZSH is also been made default shell for macOS from Catalina](https://support.apple.com/en-ca/HT208050). For writing scripts, I prefer Bash over Zsh. You can get more insight into [practical differences between Bash and Zsh](https://apple.stackexchange.com/a/361957/266414).
+Some people also prefer using [Fish](https://fishshell.com/) shell over Bash and Zsh.
+
+[**oh-my-zsh**](https://ohmyz.sh/): Oh-my-zsh is simply amazing. Without it, it is difficult to customize/configure  ZSH. _Oh-My-Zsh_ is wildly adopted, has a strong community, and a great range of features. I use _Oh-My-Zsh_ with [**Powerlevel10k**](https://github.com/romkatv/powerlevel10k) theme. My favorite thing about _Powerlevel10k_ is its [Powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k) compatibility. I use a lot of _Powerlevel9k_ customizations on _Powerlevel10k_ and _source_ them in `zshrc`. The [minimal theme](https://github.com/subnixr/minimal) is also nice to use.
+
+My [`zsh/`](https://github.com/jogendra/dotfiles/tree/master/zsh) contains `zshrc` which I kept very clean by putting similar thighs into different files eg. all aliases into `aliases` file, configurations in `config` file, powerlevel9k customizations in `powerlevel9k` file and so on, and just **sourced** them into `zshrc`. Neat. Dotfiles `zshrc` is _hardlinked_ with system's `zshrc`.
+
+```bash
+# Load: Configurations
+source $HOME/dotfiles/zsh/config
+
+# Load: Plugins
+source $HOME/dotfiles/zsh/plugins
+
+# Load: OH-MY-ZSH
+source $ZSH/oh-my-zsh.sh
+
+# Load: POWERLINE
+source $HOME/dotfiles/zsh/powerlevel9k
+
+# Load: ALIASES
+source $HOME/dotfiles/zsh/aliases
+```
+
+Looks very simple and clean? But with **`source`** command, it imports and executes a lot of stuff in it and they are loaded into your shell environment before you use them. `zshrc` is loaded and executed before you start your terminal. **`source`** is a shell built-in command which is used to read and execute the content of a file, passed as an argument in the current shell script.
+
 ### Interesting/Helpful Reads
 
 - [Configuring your login sessions with dotfiles](http://mywiki.wooledge.org/DotFiles)

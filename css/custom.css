@@ -177,3 +177,7 @@ code.language-plain {
 .hljs-variable, .hljs-params, .hljs-class .hljs-title, .hljs-aspect .hljs-title {
   color: #0f2f91;
 }
+
+html, body {
+  font-family: system-ui,-apple-system;
+}
