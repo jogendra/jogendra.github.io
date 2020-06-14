@@ -277,7 +277,38 @@ source $HOME/dotfiles/zsh/aliases
 
 Looks very simple and clean? But with **`source`** command, it imports and executes a lot of stuff in it and they are loaded into your shell environment before you use them. `zshrc` is loaded and executed before you start your terminal. **`source`** is a shell built-in command which is used to read and execute the content of a file, passed as an argument in the current shell script.
 
-### Interesting/Helpful Reads
+#### macOS Preferences
+
+A lot of macOS settings can directly be set from the command line. Preference and configuration files in macOS use property lists (_plists_) to specify the attributes, or properties, of an app or process. macOS comes with a [`defaults` command-line interface](https://support.apple.com/en-in/guide/terminal/apda49a1bb2-577e-4721-8f25-ffc0836f6997/mac) that lets you read, write, and delete macOS user defaults.
+
+Mathias Bynens [dotfiles repository](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) has a lot of macOS defaults listed, I just picked some of the defaults that I found useful. Here’s how it look like some of them:
+
+```bash
+# Free the Dock
+defaults write com.apple.Dock size-immutable -bool no; killall Dock
+
+# Remove the auto-hiding Dock delay
+defaults write com.apple.Dock autohide-delay -float 0
+
+# Remove the animation when hiding/showing the Dock
+defaults write com.apple.Dock autohide-time-modifier -float 0
+
+# Set the icon size of Dock items
+defaults write com.apple.Dock tilesize -int 28
+
+# Disable press-and-hold for keys in favor of key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
+
+To apply the macOS defaults, you can simply run:
+
+```bash
+Source ~/.dotfiles/macos/settings
+```
+
+Similarly, I have some of the [defaults](https://github.com/jogendra/dotfiles/blob/master/xcode/defaults) specific to Xcode only are inside [`xcode/`](https://github.com/jogendra/dotfiles/tree/master/xcode).
+
+### Some Interesting/Helpful Reads
 
 - [Configuring your login sessions with dotfiles](http://mywiki.wooledge.org/DotFiles)
 - [Zsh/Bash startup files loading order](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/)
