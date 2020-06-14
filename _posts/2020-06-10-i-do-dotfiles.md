@@ -314,6 +314,16 @@ Similarly, I have some of the [defaults](https://github.com/jogendra/dotfiles/bl
 
 My [`iTerm2/`](https://github.com/jogendra/dotfiles/tree/master/iTerm2) contains [`Default.json`](https://github.com/jogendra/dotfiles/blob/master/iTerm2/Default.json) which is configurations for _iTerm2's_ `Default` profile that includes _color schemes_, _Normal Font_ (I use _JetBrainsMono_), _Non Ascii Font_ (I use _MesloLGSNer_) and lot more. A profile can be imported or can be saved as JSON from **_iTerm2 > Preferences > Selecting Profile name > Clicking Other Actions_**.
 
+#### Installation Script
+
+To configure another system of your with your remote dotfiles, you need an _installation script_ that does all the installations and syncing process for you.
+
+Make sure to check out other people’s scripts for more ideas and inspiration. You can refer to these [general-purpose dotfiles utilities](https://dotfiles.github.io/utilities/) that will help you with managing, syncing, and/or installing your dotfiles. Be careful about your installations script, there may already be configurations file like `.zshrc`, `.gitconfig` etc. and you may not want to lose/replace.
+
+My dotfiles follow topological structure. Any file ending in `*.symlink` gets symlinked into `$HOME`. These get _symlinked_ on running `installers/bootstrap`. Any file named `install.sh` is executed on running `installers/install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`. [`dot`](https://github.com/jogendra/dotfiles/blob/master/installers/dot) is a simple script that installs some dependencies, sets macOS defaults, sets Xcode defaults and so on. Tweak this script, and occasionally run dot from time to time to keep the environment fresh and up-to-date.
+
+I will soon be adding **vscode** and **vim** configurations.
+
 ### Some Interesting/Helpful Reads
 
 - [Configuring your login sessions with dotfiles](http://mywiki.wooledge.org/DotFiles)
