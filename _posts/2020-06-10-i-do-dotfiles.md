@@ -55,6 +55,12 @@ I would recommend you to use [Passwordstore](https://www.passwordstore.org/) (pa
 
 Do checkout [Keep sensitive data encrypted in dotfiles](https://www.outcoldman.com/en/archive/2015/09/17/keep-sensitive-data-encrypted-in-dotfiles/). Also, check out [how to secure your dotfiles](https://abdullah.today/encrypted-dotfiles/).
 
+### Using dotfiles through SSH
+
+This section is for those who login often on remote servers using SSH. When you enter into the remote server, your ZSH, plugins, all of your aliases, completions, color schemes, _**NOTHING** is there_. Everything set to their default values because your remote shell does not have access back to your local configurations. Terrible?. The solution to this, what I would recommend is to write a script that contains everything you want to put on your remote machine and install there whenever you log in. Keep this script separate from your dotfile installation script because you may not want/need to install everything that is inside your dotfiles repository. Also, because you may not want to slow down your remote server login process. You can also use this SSH wrapper tool called [**kyrat**](https://github.com/fsquillace/kyrat) that allows you to source local dotfiles on an SSH session to a remote host. It works either from/to a _Linux_ or _OSX_ machine.
+
+<hr>
+
 ### Building my own dotfiles
 
 I came across a dotfiles repository of someone on GitHub sometime ago, I didn’t know about them before. I have always been a CLI (Command Line Interface) fanatic. I keep changing CLI configs, themes, etc time to time. I have been using _iTerm2_ with _ZSH_ and _oh-my-zsh_ from long ago. Above everything, I love scripting in general and automating stuff. For the same reason, I love shell scripting. I went through a lot of repositories from various people, but every single one of them seemed to be totally different because again dotfiles are very specific to the individual developer.
@@ -75,6 +81,8 @@ There are a few special files in the hierarchy:
 - **topic/completion.zsh**: Any file named _`completion.zsh`_ is loaded last and is expected to set up autocomplete.
 - **topic/install.sh**: Any file named `install.sh` is executed when you run `installers/install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
 - **topic/*.symlink**: Any file ending in `*.symlink` gets symlinked into your `$HOME`. This is so you can keep all of those versions in your dotfiles but still keep those autoloaded files in your home directory. These get symlinked in when you run `installers/bootstrap`.
+
+<hr>
 
 ### The Components
 
@@ -326,6 +334,7 @@ I will soon be adding **vscode** and **vim** configurations.
 
 ### Some Interesting/Helpful Reads
 
+- [GitHub ❤ ~/](https://dotfiles.github.io/)
 - [Configuring your login sessions with dotfiles](http://mywiki.wooledge.org/DotFiles)
 - [Zsh/Bash startup files loading order](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/)
 - [Why do hidden files in Unix begin with a dot?](https://www.reddit.com/r/linux/comments/at05xh/why_do_hidden_files_in_unix_begin_with_a_dot/egyj6lr/)
@@ -334,4 +343,4 @@ I will soon be adding **vscode** and **vim** configurations.
 - [Keep sensitive data encrypted in dotfiles](https://www.outcoldman.com/en/archive/2015/09/17/keep-sensitive-data-encrypted-in-dotfiles/)
 - [Securing Information in dotfiles with Password-Store (pass)](https://chrisschuld.com/2019/06/securing-information-in-dotfiles-and-aliases-with-pass/)
 
-I hope this post will give you enough push to start with your own dotfiles. Looking forword to your freshly brewed dotfiles. You can reach out to me on [Twitter](https://twitter.com/jogendrafx) in case of anything. Thanks for the read :)
+I hope this post will give you enough push to start with your own dotfiles. Looking forword to your freshly brewed dotfiles. You can reach out to me on [Twitter](https://twitter.com/jogendrafx) in case of anything. Thanks for the read :) Please take care of security of your system (or remote system) and your mental health :sparkles: :sparkles:
