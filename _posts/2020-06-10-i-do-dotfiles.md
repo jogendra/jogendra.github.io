@@ -343,4 +343,4 @@ I will soon be adding **vscode** and **vim** configurations.
 - [Keep sensitive data encrypted in dotfiles](https://www.outcoldman.com/en/archive/2015/09/17/keep-sensitive-data-encrypted-in-dotfiles/)
 - [Securing Information in dotfiles with Password-Store (pass)](https://chrisschuld.com/2019/06/securing-information-in-dotfiles-and-aliases-with-pass/)
 
-I hope this post will give you enough push to start with your own dotfiles. Looking forword to your freshly brewed dotfiles. You can reach out to me on [Twitter](https://twitter.com/jogendrafx) in case of anything. Thanks for the read :) Please take care of security of your system (or remote system) and your mental health :sparkles: :sparkles:
+I hope this post will give you enough push to start with your own dotfiles. Looking forword to your freshly brewed dotfiles. You can reach out to me on [LinkedIn](https://www.linkedin.com/in/jogendrasingh24/) in case of anything. Thanks for the read :) Please take care of security of your system (or remote system) and your mental health :sparkles: :sparkles:
