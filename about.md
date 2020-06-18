@@ -6,7 +6,7 @@ permalink: /about/
 ---
 <br>
 
-Hi, I’m Jogendra, Class of 2020 Graduate and Post Graduate from **Indian Institute of Technology (BHU) Varanasi**. I am an iOS / Web Developer and an active Open Source contributor. I love/know to design with [Sketch](https://www.sketchapp.com/). I like/love to work on different tech stacks.
+Hi, I’m Jogendra, Class of 2020 Graduate and Post Graduate from **Indian Institute of Technology (BHU) Varanasi**. I am an iOS / Web Developer and an active Open Source contributor. I like/love to work on different tech stacks.
 
 In the past, I worked with [Zomato](https://www.zomato.com/) as an iOS Developer Intern, I was Google Summer of Code (2018) Student for FOSSASIA, an iOS Developer Intern at [Wheelstreet Inc.](https://www.wheelstreet.com/), and a Software Developer Intern at [Vertext Infosoft](https://vertexinfosoft.com/). I mentored several Open Source Programs including Google Code-In 2018 and Google Summer of Code (2019) students. I love to work with tech communities. In past, I was [GitHub Campus Expert](https://githubcampus.expert/jogendra/) and also a maintainer & core contributor to [FOSSASIA](https://fossasia.org/).
 
