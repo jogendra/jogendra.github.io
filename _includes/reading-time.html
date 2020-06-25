@@ -1,5 +1,9 @@
 {% capture words %}
+{% if page.name == "index.html" %}
 {{ post.content | number_of_words | minus: 150 }}
+{% else %}
+{{ content | number_of_words | minus: 150 }}
+{% endif %}
 {% endcapture %}
 {% unless words contains '-' %}
 {{ words | plus: 120 | divided_by: 120 | append: ' Minutes Read' }}

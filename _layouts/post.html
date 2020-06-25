@@ -18,6 +18,7 @@ layout: default
 
 <section class="post-meta">
   <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
+  <div class="post-readtime">{% include reading-time.html %}</div>
   <div class="post-categories">
   {% if page.categories.size > 0 %}in {% for cat in page.categories %}
     {% if site.jekyll-archives %}
