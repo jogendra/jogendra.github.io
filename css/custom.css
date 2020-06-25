@@ -181,3 +181,7 @@ code.language-plain {
 html, body {
   font-family: system-ui,-apple-system;
 }
+
+.post-readtime {
+  float: right;
+}
