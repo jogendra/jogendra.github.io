@@ -186,3 +186,11 @@ html, body {
   float: right;
   font-size: 0.9em;
 }
+
+code {
+  padding: 0 .4em;
+}
+
+pre code.hljs {
+  font-size: 1em;
+}
