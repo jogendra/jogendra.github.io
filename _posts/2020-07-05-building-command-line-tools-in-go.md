@@ -21,17 +21,16 @@ Go is simply great to build CLI tools. Go might be the fastest and perhaps the m
 #### Before we start
 Before we proceed any further, install Go on your machine, if you have not already installed so. For this, you can follow the [installation procedure](https://golang.org/doc/install) on the official Golang website. It is good to have recent version of Go on your machine. You can simply execute `go version` to check Go version installed on your machine.
 
-#### Setting up Go environment variables
+#### Setting up environment variables
 
-Environment variables, are variables in your system that describe your environment. They are executed and added to your machine environment before you access/use them. During the Go installation, some Go specific environment variables are set to configure behavior of Go tools on your machine. You can check Go environment variables by running `go env`. We mostly care about `GOPATH`, `GOBIN` and `GOROOT`. 
+Environment variables, are variables in your system that describe your environment. They are executed and added to your machine environment before you access/use them. During the Go installation, some Go specific environment variables are set to configure behavior of Go tools on your machine. You can check Go environment variables by running `go env`. 
 
-In your `.zshrc` or `.bashrc` file, set your **$GOPATH** and **$GOBIN** environment variables so that we can invoke `bookmark` command from anywhere.
+In your `.zshrc` or `.bashrc` file, append your system's **$PATH** so that we can invoke `bookmark` command from anywhere.
 
 ```bash
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin
-export PATH=${PATH}:$GOBIN
+export PATH=${PATH}:$HOME/go/bin
 ```
+
 > `PATH=${PATH}:path/to/folder` is an interesting thing of unix, I will keep it for some other blog post to explain it in details.
 
 Restart your terminal once to source them into your machine environment or just `source ~/.zshrc`.
@@ -64,7 +63,7 @@ You can simply use `go get` to install the latest version of Cobra. This command
 go get -u github.com/spf13/cobra/cobra
 ```
 
-The cobra binary is now in the `bin/` (usually `~/go/bin/cobra`) directory of your `$GOPATH`, which is itself in your `PATH`, so it can be used directly from anywhere. You can run `cobra help` or just `cobra` to get more familiar with it.
+The cobra binary is now in the `bin/` (usually `~/go/bin/cobra`) directory, which is itself in your `PATH`, so it can be used directly from anywhere. You can run `cobra help` or just `cobra` to get more familiar with it.
 
 ## Let’s get started
 
