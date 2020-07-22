@@ -4,6 +4,7 @@ title: I do Dotfiles!
 description: A detailed post about dotfiles in general and my dotfiles
 comments: true
 keywords: dotfiles, git, zsh, version control, vcs, open source, bash, vim, iterm2, macos, applescript, bashrc, zshrc, xcode
+scover: i_do_dotfiles.png
 ---
 One of the main advantages/beauty of Unix-like systems is that configurations of everything are very customizable. Dotfiles are simply amazing. They are tiny-little configurations files but they customize/decide a lot of your system. Well-organized and understandable dotfiles basically allow you to automatize complex tasks that you repeat everyday. With dotfiles, your machine is more organized, advanced, and customized in the way you like your system to be. Also with dotfiles, you can mess around with new packages and settings quite easily, without ever having to worry about really breaking something important. If you would break something, your dotfiles are always right there to back you up.
 
