@@ -5,12 +5,12 @@ name: Jogendra Kumar
 subtitle: Learnings Software Engineering and Doing Open Source Everyday!
 email: jogendrafx@gmail.com
 description: >
-  A personal website about me and technical things I find useful.
+  Personal website about me and technical things I find useful.
 baseurl: ""
-url: "https://jogendra.github.io/"
+url: "https://jogendra.dev"
 twitter_username: jogendrafx
 github_username:  jogendra
-disqus_baseurl: "https://jogendra.github.io/"
+disqus_baseurl: "https://jogendra.dev"
 disqus_shortname: https-jogendra-github-io
 permalink: :title
 cover: "/assets/page-cover.png"

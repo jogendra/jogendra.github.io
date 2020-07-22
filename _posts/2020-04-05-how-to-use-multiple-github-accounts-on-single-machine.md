@@ -29,7 +29,7 @@ By default, git use a system-wide configuration file (global config file) or the
 
 ```bash
 git config user.name <username>
-git cofig user.email <your-email@example.com>
+git config user.email <your-email@example.com>
 ```
 
 Every git repository has a hidden `.git` folder (dotfile) which stores all of git related information. You can always check the username and email for a particular project.
