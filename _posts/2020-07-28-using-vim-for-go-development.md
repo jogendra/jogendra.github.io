@@ -17,14 +17,13 @@ As a programmer, you spend a lot of time using text editors, IDEs, etc to code. 
 - Vim and vim like text editors (emacs, nano, etc) feel and look so native, no distraction. I don't have to switch between the terminal and editor/IDE. It's just simply everything in one place. It's pretty easy to be productive in vim with little effort.
 - Vim is very handy when you have to make quick configurational or other changes to the remote machine/server. Even on your own machine, you won’t open a heavy text editor for small change.
 - Vim is highly configurable. You can simply use `~/.vimrc` to override default configurations and personalize yours. Vim plugins provide everything to vim that you need in a text editor. Autocomplete, syntax highlighting, or any other feature you name it and it is available, you just need the right plug-in.
-- Using vim is fun!
+- Using vim is fun. It's little challenging to use initially, but it become fun once you get used to it.
 
 ## Let's GO!
 
-In this post, we will explore setting up Vim as a full-fledged IDE for Go development. Some of the plugins we are going to use are:
+In this post, we will explore setting up Vim as a full-fledged IDE for Go development. Plugins we are going to use are:
 
 - [vim-go](https://github.com/fatih/vim-go): Go development plugin for Vim. It has everything you need for Go development.
-- [coc.nvim (Conquer of Completion)](https://github.com/neoclide/coc.nvim): Language Server Protocol (LSP) support for Vim. Enables autocompletion, going to the definition, diagnostics, etc.
 - [NERDTree](https://github.com/preservim/nerdtree) - File system explorer for the Vim. It enables you to visually browse complex directory hierarchies, quickly open files for reading or editing, and perform basic file system operations.
 
 ### :electric_plug: [Vim-Go](https://github.com/fatih/vim-go)
@@ -77,9 +76,10 @@ let g:go_highlight_operators = 1
 let g:go_fmt_autosave = 1
 let g:go_fmt_command = "goimports"
 
-au BufRead,BufNewFile *.gohtml set filetype=gohtmltmpl
+" Status line types/signatures
+let g:go_auto_type_info = 1
 
-" run :GoBuild or :GoTestCompile based on the go file
+" Run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
   let l:file = expand('%')
   if l:file =~# '^\f\+_test\.go$'
@@ -102,56 +102,46 @@ You can visit [official tutorials](https://github.com/fatih/vim-go/wiki/Tutorial
 
 Beautiful?
 
-### :electric_plug: [Conquer of Completion (coc.nvim)](https://github.com/neoclide/coc.nvim)
+#### Auto Completion
 
-It’s really hard to code without auto completion and not being able to going to definition. [coc.nvim](https://github.com/neoclide/coc.nvim) has full Language Server Protocol (LSP) support which enable feature like auto completion, going to a definition fast. According to coc.nvim README, coc.nvim is:
-
-- 🚀 **Fast**: [instant increment completion](https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources), increment buffer sync using buffer update events.
-- 💎 **Reliable**: typed language, tested with CI.
-- 🌟 **Featured**: [full LSP support](https://github.com/neoclide/coc.nvim/wiki/Language-servers#supported-features)
-- ❤️ **Flexible**: [configured like VSCode](https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file), [extensions work like in VSCode](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
-
-#### Language Server Protocol (LSP) and gopls
-
-The Language Server protocol is used between a tool (the client) and a language smartness provider (the server) to integrate features like auto complete, go to definition, find all references and alike into the tool. The goal of the protocol is to allow programming language support to be implemented and distributed independently of any given editor or IDE. The Language Server Protocol was originally developed for Microsoft's Visual Studio Code and is now an open standard. Microsoft collaborated with Red Hat and Codenvy to standardise the protocol's specification. You can read more about LSP [here](https://microsoft.github.io/language-server-protocol/) or watch this [YouTube video](https://www.youtube.com/watch?v=2GqpdfIAhz8) to see how it works.
-
-Official Language Server for Golang is [**gopls**](https://github.com/golang/tools/blob/master/gopls/README.md) (pronounced: _”go please”_). You can check more information about the [status of gopls and its supported features](https://github.com/golang/tools/blob/master/gopls/doc/status.md).
-
-#### coc.nvim installation and configuration
-
-To install coc.nvim, you can simply put this below `vim-go` plug in your `.vimrc`:
-
-```bash
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-```
-
-Now, restart Vim and run `:PlugInstall` from Vim or run `vim +PlugInstall` from command line.
-
-You have to install coc extension or configure language servers for LSP support. For this, go to vim and run `:CocConfig`. It will open `coc-settings.json` file to configure language server. For Go, paste the configuration like below:
-
-```json
-{
-  "languageserver": {
-    "go": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "trace.server": "verbose",
-      "filetypes": ["go"]
-    }
-  }
-}
-```
-
-Further, you can put this [example vim configuration for coc](https://github.com/neoclide/coc.nvim/blob/master/README.md#example-vim-configuration) into your `.vimrc`.
-OR create a new file with `.vim` extension, put the configurations and import them into your `.vimrc` (recommended since it keep your `.vimrc` clean):
+It’s really hard to code without auto completion and not being able to going to definition. Vim-go can use `gopls` for completion etc. Completion is enabled by default via **omnifunc**. While you are in `INSERT` mode, you can trigger completion with `Ctrl-x Ctrl-p`. If matching names are found, a pop-up menu opens which can be navigated using the `Ctrl-n` and `Ctrl-p` keys. 
+To check if vim-go’s `ftplugin/go.vim` has been configured correctly for autocompletion, you can run:
 
 ```viml
-:so path/to/your/file.vim
+:verbose setlocal omnifunc?
+```
+
+Message below should appear:
+
+```viml
+omnifunc=go#complete#Complete
+        Last set from ~/.vim/pack/plugins/start/vim-go/ftplugin/go.vim
+```
+
+If you want the autocomplete prompt to appear automatically whenever you press the _dot_ (`.`), you can add the following line to your `.vimrc`:
+
+```viml
+au filetype go inoremap <buffer> . .<C-x><C-o>
 ```
 
 Now, typing should offer auto suggestions along with documentation previews. It should look something like this:
 
 <img class="fullimg" alt="coc autocompletion screenshot" src="https://user-images.githubusercontent.com/20956124/88567355-feddcb00-d054-11ea-9ea1-d556d1e13e1c.png">
+
+Apart from vim-go completion, there some good plugins which you can use for auto completion and other LSP features. Some of them are:
+- [coc.nvim (Conquer of Completion)](https://github.com/neoclide/coc.nvim): Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode.
+- [LanguageClient-neovim](https://github.com/autozimu/LanguageClient-neovim): Minimal Language Server Protocol client written in Rust.
+- [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe): Code-completion engine. It has several completion engines.
+
+#### Language Server Protocol (LSP) and gopls
+
+The Language Server protocol is used between a tool (the client) and a language smartness provider (the server) to integrate features like auto complete, go to definition, find all references and alike into the tool. The goal of the protocol is to allow programming language support to be implemented and distributed independently of any given editor or IDE. The Language Server Protocol was originally developed for Microsoft's Visual Studio Code and is now an open standard. Microsoft collaborated with Red Hat and Codenvy to standardise the protocol's specification.
+
+Before LSP, there used to be different IDEs for different languages (still there are many). Every IDEs had language specific integration (syntax highliting, auto completion, going to defination, etc features). The situation is often referred to as an M × N problem, where the number of integrations is the product of M editors and N languages. What the Language Server Protocol does is change this M × N problem into a M + N problem. Best things about LSP is, it is totally independent of IDEs. As a result we can see that, Visual Studio work for so many different languages via extensions. These extensions make use of LSP.
+
+You can read more about LSP [here](https://microsoft.github.io/language-server-protocol/) and [her](https://docs.microsoft.com/en-us/visualstudio/extensibility/language-server-protocol?view=vs-2019) or watch this [YouTube video](https://www.youtube.com/watch?v=2GqpdfIAhz8) to see how it works.
+
+Official Language Server for Golang is [**gopls**](https://github.com/golang/tools/blob/master/gopls/README.md) (pronounced: _”go please”_). You can check more information about the [status of gopls and its supported features](https://github.com/golang/tools/blob/master/gopls/doc/status.md).
 
 ### :electric_plug: [NERDTree](https://github.com/preservim/nerdtree)
 
