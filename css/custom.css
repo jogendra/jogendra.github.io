@@ -188,7 +188,6 @@ code.language-plain {
 html, body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    letter-spacing: .25px;
     font-style: normal;
     word-spacing: 1px;
     -moz-osx-font-smoothing: grayscale;
