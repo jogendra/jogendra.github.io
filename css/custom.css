@@ -137,6 +137,13 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+    font-weight: 500;
 }
 
 code.language-plain {
@@ -179,7 +186,14 @@ code.language-plain {
 }
 
 html, body {
-  font-family: system-ui,-apple-system;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    letter-spacing: .25px;
+    font-style: normal;
+    word-spacing: 1px;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 .post-readtime {
