@@ -484,7 +484,7 @@ pre code.hljs {
 }
 
 .post-navigation {
-	font-size: 14px;
+	font-size: 16px;
 	display: block;
 	width: auto;
 }
@@ -494,6 +494,9 @@ pre code.hljs {
 	width: 50%;
 	float: left;
 	margin: 1em 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .post-navigation .next-post {

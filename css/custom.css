@@ -207,3 +207,7 @@ code {
 pre code.hljs {
   font-size: 1em;
 }
+
+.page-content .post .share {
+  font-weight: 500;
+}
