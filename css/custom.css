@@ -230,6 +230,11 @@ pre code.hljs {
   font-size: 1.2em;
 }
 
+.intro h3 {
+  text-align: center;
+  margin: 0;
+}
+
 .intro .about-me-direct {
   display: block;
   margin: 24px auto;
