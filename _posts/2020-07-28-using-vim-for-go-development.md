@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Vim for Go development
+title: Using Vim for Go Development
 description: Detailed post about using vim for all Go related development with vim-go and other plugins
 comments: true
 keywords: vim, go, golang, vim-go, nerdtree, coc.nvim, plugins

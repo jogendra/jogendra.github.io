@@ -212,10 +212,12 @@ pre code.hljs {
   font-weight: 500;
 }
 
-.intro {
-  border: 1px solid #dddddd;
-  border-radius: 16px;
-  margin: 1%;
+@media screen and (min-width: 1025px) {
+  .intro {
+    border: 1px solid #dddddd;
+    border-radius: 16px;
+    margin: 1%;
+  }
 }
 
 .intro > div > p > a .fa {
@@ -240,6 +242,12 @@ pre code.hljs {
   letter-spacing: 0.03em;
 }
 
+.intro .about-me-direct:hover {
+  text-decoration: none;
+  background-color: #333;
+  color: #dddddd;
+}
+
 .head-cover {
   width: 120px !important;
   height: 120px;
@@ -247,4 +255,16 @@ pre code.hljs {
   border-radius: 50%;
   margin-top: 32px !important;
   margin-bottom: 32px !important;
+}
+
+.soc-med {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;  
+}
+
+.soc-med a {
+  font-size: 2em;
+  margin: 8px 16px;
 }
