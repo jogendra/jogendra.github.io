@@ -211,3 +211,40 @@ pre code.hljs {
 .page-content .post .share {
   font-weight: 500;
 }
+
+.intro {
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  margin: 1%;
+}
+
+.intro > div > p > a .fa {
+  color: black !important;
+  font-size: 32px !important;
+}
+
+.intro > .head-intro {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.intro .about-me-direct {
+  display: block;
+  margin: 24px auto;
+  padding: 0.8em 1.25em;
+  font-size: 1.1em;
+  border-radius: 8px;
+  background-color: black;
+  font-weight: 500;
+  word-spacing: 1px;
+  letter-spacing: 0.03em;
+}
+
+.head-cover {
+  width: 120px !important;
+  height: 120px;
+  border: 2px solid #999999;
+  border-radius: 50%;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}

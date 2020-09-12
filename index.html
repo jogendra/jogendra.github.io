@@ -3,21 +3,22 @@ layout: default
 ---
 <div class="home">
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <img class="head-cover" src="{{ site.head }}" height="100">
-    <header class="site-header">
-      <h1 class="title">{{ site.title }}</h1>
-      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    </header>
-    <!-- Social Media Links -->
-    <hr width="0">
+ <div class="intro wrapper">
+    <img class="head-cover" src="{{ site.head }}">
+    <p class="head-intro">
+      iOS/Backend Engineer
+    </p>
+    <a href="/about.md"></a>
+      <button class="about-me-direct">
+        About Me &nbsp;<i class="fa fa-arrow-right"></i>
+      </button>
+    </a>
     {% include social-media.html %}
-      <!-- Social Media Links -->
-  </div>
-</div>
+   <!-- <hr> -->
+ </div>
 
 <div class="wrapper">
+  <hr>
 <ul class="post-list">
   {% for post in paginator.posts %}
   <li>
