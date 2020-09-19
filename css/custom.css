@@ -181,6 +181,11 @@ code.language-plain {
   border-radius: 4px;
 }
 
+.diffimg {
+  border-radius: 4px;
+  margin-left: 0 !important;
+}
+
 .hljs-variable, .hljs-params, .hljs-class .hljs-title, .hljs-aspect .hljs-title {
   color: #0f2f91;
 }
