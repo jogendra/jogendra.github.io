@@ -10,6 +10,8 @@ In this post, I will explain, how you can add the Launch at Login (launch applic
 
 Link to Pull Request: [Add Launch at Login feature](https://github.com/leits/MeetingBar/pull/76)
 
+Source Code for this post: [https://github.com/jogendra/launch-at-login-macos](https://github.com/jogendra/launch-at-login-macos)
+
 For the users, a straightforward solution is going to system preference and enable auto launching for applications (_Preferences -> Users & Groups -> Login Items_). But it is always good if the application itself offers the feature from its preference. For application developers, it's a bit tricky.
 
 There are a couple of ways to add a login item to the application. The most used/useful way is using the [Service Management framework](https://developer.apple.com/documentation/servicemanagement). Login items installed using the Service Management framework are not visible in System Preferences and can only be removed by the application that installed them.
@@ -66,7 +68,7 @@ In next screen, choose _'AutoLauncher'_ for `Product Name` (or whatever name you
 <!-- <img class="fullimg" alt="AutoLauncher Info.plist" src="https://user-images.githubusercontent.com/20956124/93661127-f3b28480-fa72-11ea-8e74-b734d6ccd814.png"> -->
 <img class="fullimg" alt="AutoLauncher Info.plist" src="https://user-images.githubusercontent.com/20956124/93661035-36279180-fa72-11ea-8350-5e58078d83a9.png">
 
-- Go to _Targets_, select _'AutoLauncher'_ Target's Build Settings, and search for _"skip install"_. Set `Skip Install` to `Yes`.
+- Go to _Targets_, select _'AutoLauncher'_ Target's Build Settings, and search for _"skip install"_. Set `Skip Install` to `Yes`. Otherwise we would end up with too many bundles in our final app archive.
 
 <img class="fullimg" alt="Skip Install Settings" src="https://user-images.githubusercontent.com/20956124/93661621-be0f9a80-fa76-11ea-9319-7953df61180c.png">
 
@@ -124,3 +126,41 @@ Since we have deleted entry point of AutoLauncher target which was earlier confi
 <img class="fullimg" alt="main.swift code" src="https://user-images.githubusercontent.com/20956124/93665199-40f21e80-fa92-11ea-97d2-a890926ce06c.png">
 
 Clean? We are done with all the setups for helper. Now, let's configure our Main Application.
+
+## :electric_plug: Adding Helper to Main Application
+
+We have to copy the helper application AutoLauncher inside our MainApplication. To do so, go to Project Setting, have _`MainApplication`_ target selected, select _Build Phases_, click **`+`** icon shown below, and select `New Copy Files Phase`.
+
+<img class="fullimg" alt="New Copy Files Phase" src="https://user-images.githubusercontent.com/20956124/93669587-e1583b00-fab2-11ea-9c78-a947854cd756.png">
+
+Apply Settings as below:
+
+Select **Wrapper** as `Destination`, put **_Contents/Library/LoginItems_** in `Subpath` and finally click on **+** icon to add `AutoLauncher.app` there (it will be inside _Product_ folder).
+
+<img class="fullimg" alt="New Copy Files Phase" src="https://user-images.githubusercontent.com/20956124/93670076-07330f00-fab6-11ea-9160-2b257b0a0411.png">
+
+Now, go to `General` tab and Add **ServiceManagement** framework to `Frameworks, Libraries, and Embedded Content` section.
+
+You can now import `ServiceManagement` to any of your swift file and use the [**`SMLoginItemSetEnabled(_:_:)`**](https://developer.apple.com/documentation/servicemanagement/1501557-smloginitemsetenabled?language=swift) function to enable a helper application. It takes two arguments, a `CFStringRef` containing the bundle identifier of the helper application, and a `Boolean` specifying the desired state. This value is effective only for the currently logged-in user. Pass **`true`** to start the helper application immediately and indicate that it should be started every time the user logs in. Pass **`false`** to terminate the helper application and indicate that it should no longer be launched when the user logs in. This function returns true if the requested change has taken effect; otherwise, it returns false. This function can be used to manage any number of helper applications.
+
+#### Example UI
+
+<img class="diffimg" alt="Example UI for Launch at Login" src="https://user-images.githubusercontent.com/20956124/93679403-02c52100-facb-11ea-898b-36989d11d03e.png" style="width:200px !important">
+
+In this example, I just added a simple toggle using SwiftUI. On toggle, it's calling `SMLoginItemSetEnabled` function with helper app identifier and current state of toggle. Further, you can store current state in UserDefaults.
+
+<img class="fullimg" alt="Example UI for Launch at Login" src="https://user-images.githubusercontent.com/20956124/93672414-4b2f0f80-fac8-11ea-968e-5f80bf6f1241.png">
+
+**NOTE**: If multiple applications (for example, several applications from the same organization) contain a helper application with the same bundle identifier, only the one with the greatest bundle version number is launched. Any of the applications that contain a copy of the helper application can enable and disable it. You should keep this in mind if you are shipping applications under the same organization. You can read more in detail about this [here](https://www.appcoda.com/app-group-macos-ios-communication/).
+
+### :link: Helpful Links
+
+1. [App Sandbox in Depth](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW4)
+2. [Creating a macOS App in SwiftUI](https://developer.apple.com/tutorials/swiftui/creating-a-macos-app)
+3. [SMLoginItemSetEnabled Method Documentations](https://developer.apple.com/documentation/servicemanagement/1501557-smloginitemsetenabled?language=swift)
+4. [Beyond App Sandbox: Going outside of the macOS app container](https://www.appcoda.com/mac-app-sandbox/)
+5. [Using App Groups for communication between macOS/iOS apps from the Same Vendor](https://www.appcoda.com/app-group-macos-ios-communication/)
+
+### :memo: Closing Notes
+
+We have seen how we can add login items to any MacOS application. You can [**Download Full Source Code Here**](https://github.com/jogendra/launch-at-login-macos). Adding login items to macOS applications isn't that straight-forward. You need to follow all the setps carefully. I hope this post helped you in some way. Do share and [drop me suggestions/questions on Twitter](https://twitter.com/jogendrafx). Thanks for read :)
