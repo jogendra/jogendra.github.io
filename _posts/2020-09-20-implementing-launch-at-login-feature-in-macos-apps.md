@@ -72,7 +72,7 @@ In next screen, choose _'AutoLauncher'_ for `Product Name` (or whatever name you
 
 <img class="fullimg" alt="Skip Install Settings" src="https://user-images.githubusercontent.com/20956124/93661621-be0f9a80-fa76-11ea-9319-7953df61180c.png">
 
-- Go to `AppDelegate.swift` of AutoLauncher, **rename** class name `AppDelegate` to `AutoLauncherAppDelegate` (or whatever name you want to give) because it is conflicting with `AppDelegate` class of our MainApplication. We will configure this Delegate class method `applicationDidFinishLaunching(_ :)` like below. It check if MainApplication is running, if not, launch application using [`openApplication(at:configuration:completionHandler:)`](https://developer.apple.com/documentation/appkit/nsworkspace/3172700-openapplication). This instance method launches the app at the specified path URL.
+- Go to `AppDelegate.swift` of AutoLauncher, **rename** class name `AppDelegate` to `AutoLauncherAppDelegate` (or whatever name you want to give) because it is conflicting with `AppDelegate` class of our MainApplication. We will configure this Delegate class method `applicationDidFinishLaunching(_ :)` like below. It check if MainApplication is running, if not, launch application using [`openApplication(at:_:_:)`](https://developer.apple.com/documentation/appkit/nsworkspace/3172700-openapplication). This instance method launches the app at the specified path URL.
 
 <!-- ```swift
 import Cocoa
