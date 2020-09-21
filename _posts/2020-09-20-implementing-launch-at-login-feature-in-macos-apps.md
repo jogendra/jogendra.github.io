@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementing Launch at Login Feature in MacOS Apps
-description: How to launch a completely sandboxed macOS application on system startup
+description: How to launch a completely sandboxed macOS application on system startup using Swift (SwiftUI)
 comments: true
 keywords: swift, macos, swiftui, open-source, apple, xcode
 scover: launch_at_login.png
