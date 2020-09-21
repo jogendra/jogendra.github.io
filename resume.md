@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-description: Jogendra Kumar is a software developer who loves open source.
+description: Personal website about me and technical things I find useful
 permalink: /resume/
 ---
 
