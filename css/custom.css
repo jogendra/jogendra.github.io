@@ -287,8 +287,8 @@ pre code.hljs {
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  /* padding-right: 2rem;
-  padding-left: 2rem; */
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .es-content-main {
@@ -354,6 +354,9 @@ pre code.hljs {
 }
 
 @media screen and (min-width: 768px) {
+  .es-topmost {
+    padding: 0;
+  }
   .es-form-main {
     flex-direction: row;
   }
@@ -361,4 +364,12 @@ pre code.hljs {
     margin-top: 0;
     margin-left: 1rem;
   }
+}
+
+.subs-p {
+  font-size: 1.25em;
+}
+
+.subs-head {
+  margin-top: 2em;
 }
