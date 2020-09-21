@@ -178,11 +178,11 @@ code.language-plain {
 
 .fullimg {
   width: 100% !important;
-  border-radius: 4px;
+  border-radius: 0.5rem;
 }
 
 .diffimg {
-  border-radius: 4px;
+  border-radius: 0.5rem;
   margin-left: 0 !important;
 }
 
@@ -277,4 +277,88 @@ pre code.hljs {
 .soc-med a {
   font-size: 2em;
   margin: 8px 16px;
+}
+
+/* Email Subscribe */
+
+.es-topmost {
+  max-width: 784px;
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* padding-right: 2rem;
+  padding-left: 2rem; */
+}
+
+.es-content-main {
+  padding: 2em;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 1rem;
+}
+
+.es-title {
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.es-title-sp {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(0,0,0,0.4);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.es-form-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.es-email {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 0.5rem;
+  border-style: none;
+  border-width: 0;
+  color: rgba(0,0,0,0.8);
+  letter-spacing: 0.05rem;
+}
+
+.es-submit {
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+  margin-left: 0;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 00.5rem;
+  border-style: none;
+  border-width: 0;
+  opacity: 1;
+}
+
+.es-submit:hover {
+  transition: opacity .15s ease-in;
+}
+
+@media screen and (min-width: 768px) {
+  .es-form-main {
+    flex-direction: row;
+  }
+  .es-submit {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
 }
