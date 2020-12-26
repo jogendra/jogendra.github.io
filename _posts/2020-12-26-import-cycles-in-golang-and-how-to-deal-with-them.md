@@ -17,6 +17,50 @@ Let’s say we have two packages, `p1` and `p2`. When package `p1` depends on pa
 
 Let’s understand it through some example code.
 
+```go
+package p1
+
+import (
+	"fmt"
+	"import-cycle-example/p2"
+)
+
+func HelloFromP1() {
+	fmt.Println("Hello from package p1")
+}
+
+func HelloFromP2Side() {
+	p2.HelloFromP2()
+}
+```
+
+```go
+package p2
+
+import (
+	"fmt"
+	"import-cycle-example/p1"
+)
+
+func HelloFromP2() {
+	fmt.Println("Hello from package p2")
+}
+
+func HelloFromP1Side() {
+	p1.HelloFromP1()
+}
+```
+
+On building, compiler returns the error:
+
+```bash
+imports import-cycle-example/p1
+imports import-cycle-example/p2
+imports import-cycle-example/p1: import cycle not allowed
+```
+
+You can find source code [here](https://github.com/jogendra/import-cycle-example-go/tree/844c450cd59f5c21ab05fa1beebdaf58b6f2c9bb).
+
 ### Import Cycles Are Bad Design
 
 Go is highly focused on faster compile time rather than speed of execution (even willing to sacrifice some run-time performance for faster build). The Go compiler doesn’t spend a lot of time trying to generate the most efficient possible machine code, it cares more about compiling lots of code quickly.
@@ -30,6 +74,30 @@ Cyclic dependencies may also cause memory leaks since each object holds on to th
 The worst thing about the import cycle error is, Golang doesn’t tell you source file or part of the code which is causing the error. So it becomes tough to figure out when the codebase is large. You would be wondering around different files/packages to check where actually the issue is. Why golang do not show the cause that causing the error? Because there is not only a single culprit source file in the cycle.
 
 But it does show the packages which are causing the issue. So you can look into those packages and fix the problem.
+
+To visualize the dependencies in your project, you can use [godepgraph](https://github.com/kisielk/godepgraph), a Go dependency graph visualization tool. It can be installed by running:
+
+```
+go get github.com/kisielk/godepgraph
+```
+
+It display graph in [Graphviz](http://graphviz.org) dot format. If you have the graphviz tools installed (you can download from [here](https://graphviz.org/download)), you can render it by piping the output to dot:
+
+```
+godepgraph -s import-cycle-example | dot -Tpng -o godepgraph.png
+```
+
+You can see import cycle in output png file:
+
+<img class="fullimg" alt="import cycle golang" style="width:25% !important;margin:unset" src="https://user-images.githubusercontent.com/20956124/103155444-0f41cf80-47c6-11eb-9ae8-791310e10b0a.png">
+
+Apart from it, you can use `go list` to get some insights (run `go help list` for additional information).
+
+```
+go list -f '{\{join .DepsErrors "\n"\}}' <import-path>
+```
+
+You can provide import path or can be left empty for current directory.
 
 ### Dealing with Import Cycles
 
