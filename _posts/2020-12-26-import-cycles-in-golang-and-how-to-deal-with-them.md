@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Import Cycles in Golang: How To Deal With Them"
-description: Post explaining how the import cycle occurs and how you can deal with them
+description: Post explaining how the Import Cycles in Golang occurs and how you can deal with them
 comments: true
 keywords: go, golang, import cycle
-scover:
+scover: import_cycles.png
 ---
 
 As a Golang developer, you probably have encountered import cycles. Golang do not allow import cycles. Go throws a compile-time error if it detects the import cycle in code. In this post, let's understand how the import cycle occurs and how you can deal with them.
