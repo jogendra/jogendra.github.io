@@ -17,6 +17,7 @@ Let’s say we have two packages, `p1` and `p2`. When package `p1` depends on pa
 
 Let’s understand it through some example code.
 
+_**Package p1**:_
 ```go
 package p1
 
@@ -25,15 +26,22 @@ import (
 	"import-cycle-example/p2"
 )
 
-func HelloFromP1() {
+type PP1 struct{}
+
+func New() *PP1 {
+	return &PP1{}
+}
+
+func (p *PP1) HelloFromP1() {
 	fmt.Println("Hello from package p1")
 }
 
-func HelloFromP2Side() {
-	p2.HelloFromP2()
+func (p *PP1) HelloFromP2Side() {
+	pp2 := p2.New()
+	pp2.HelloFromP2()
 }
 ```
-
+_**Package p2**:_
 ```go
 package p2
 
@@ -42,12 +50,19 @@ import (
 	"import-cycle-example/p1"
 )
 
-func HelloFromP2() {
+type PP2 struct{}
+
+func New() *PP2 {
+	return &PP2{}
+}
+
+func (p *PP2) HelloFromP2() {
 	fmt.Println("Hello from package p2")
 }
 
-func HelloFromP1Side() {
-	p1.HelloFromP1()
+func (p *PP2) HelloFromP1Side() {
+	pp1 := p1.New()
+	pp1.HelloFromP1()
 }
 ```
 
@@ -58,8 +73,6 @@ imports import-cycle-example/p1
 imports import-cycle-example/p2
 imports import-cycle-example/p1: import cycle not allowed
 ```
-
-You can find source code [here](https://github.com/jogendra/import-cycle-example-go/tree/844c450cd59f5c21ab05fa1beebdaf58b6f2c9bb).
 
 ### Import Cycles Are Bad Design
 
@@ -105,10 +118,85 @@ When you encounter the import cycle error, take a step back, and think about the
 
 #### The Interface Way:
 
-- Package `p2` to use functions/variables from package `p1` by importing package `p1`.
-- Package `p1` to call functions/variables from package `p2` without having to import package `p2`. All it needs to be passed package `p2` instances which implement an interface defined in `p1`, those instances will be views as package `p1` object.
+- Package `p1` to use functions/variables from package `p2` by importing package `p2`.
+- Package `p2` to call functions/variables from package `p1` without having to import package `p1`. All it needs to be passed package `p1` instances which implement an interface defined in `p2`, those instances will be views as package `p2` object.
 
-That’s how package `p1` ignores the existence of package `p2`.
+That’s how package `p2` ignores the existence of package `p1` and import cycle is broken.
+
+After applying steps above, package `p2` code:
+
+```go
+package p2
+
+import (
+	"fmt"
+)
+
+type pp1 interface {
+	HelloFromP1()
+}
+
+type PP2 struct {
+	PP1 pp1
+}
+
+func New(pp1 pp1) *PP2 {
+	return &PP2{
+		PP1: pp1,
+	}
+}
+
+func (p *PP2) HelloFromP2() {
+	fmt.Println("Hello from package p2")
+}
+
+func (p *PP2) HelloFromP1Side() {
+	p.PP1.HelloFromP1()
+}
+```
+
+And package `p1` code look like:
+
+```go
+package p1
+
+import (
+	"fmt"
+	"import-cycle-example/p2"
+)
+
+type PP1 struct{}
+
+func New() *PP1 {
+	return &PP1{}
+}
+
+func (p *PP1) HelloFromP1() {
+	fmt.Println("Hello from package p1")
+}
+
+func (p *PP1) HelloFromP2Side() {
+	pp2 := p2.New(p)
+	pp2.HelloFromP2()
+}
+```
+
+You can use this code in `main` package to test.
+
+```go
+package main
+
+import (
+	"import-cycle-example/p1"
+)
+
+func main() {
+	pp1 := p1.PP1{}
+	pp1.HelloFromP2Side() // Prints: "Hello from package p2"
+}
+```
+
+You can find full source code on GitHub at [**jogendra/import-cycle-example-go**](https://github.com/jogendra/import-cycle-example-go)
 
 ### Bottom Lines
 
