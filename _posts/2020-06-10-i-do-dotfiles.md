@@ -92,7 +92,7 @@ There are a few special files in the hierarchy:
 AppleScript is a scripting language developed by Apple to help people automate their work processes on the MacOS. AppleScript is an extremely simple, almost English-like language, but automation it does is pure gold. I sometimes write AppleScripts to automate stuff on my mac where it involves a lot of clicks or similar and I use them using shell aliases.
 Here is a simple AppleScript that I wrote to open _iTerm2_ tabs with right directory for all work-related projects.
 
-```AppleScript
+```applescript
 property examplePath1 : "~/Projects/pathto/directory1"
 property examplePath2 : "~/Projects/pathto/directory2"
 property examplePath3 : "~/Projects/pathto/directory3"

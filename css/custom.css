@@ -115,7 +115,7 @@ ul.actions li {
 }
 
 .hljs {
-  background-color: #f6f8fa;
+  background-color: #f6f8fa80 !important;
 }
 
 .hljs-pseudo {
@@ -133,6 +133,7 @@ ul.actions li {
 code {
   background-color: #f6f8fa;
   max-height: 30em;
+  scrollbar-width: thin;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -190,6 +191,10 @@ code.language-plain {
   color: #0f2f91;
 }
 
+.hljs-comment {
+  color: #047b00 !important;
+}
+
 html, body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -210,7 +215,7 @@ code {
 }
 
 pre code.hljs {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .page-content .post .share {
@@ -377,4 +382,5 @@ pre code.hljs {
 .hljs {
   border: 0.1px solid rgba(0,0,0,0.1);
   border-radius: 8px;
+  font-family: 'Jetbrains-Mono';
 }

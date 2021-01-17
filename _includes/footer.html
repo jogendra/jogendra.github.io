@@ -21,15 +21,13 @@
 {% endif %}
 <!-- Scripts -->
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
 <script>
-
 $(document).ready(function() {
-
   // Syntax highlighting
   hljs.initHighlightingOnLoad();
-
   // Header
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
@@ -46,5 +44,4 @@ $(document).ready(function() {
   jQuery('.post-content a, .post-excerpt a').not('.footnote, .reversefootnote').attr ('target', '_blank');
 
 });
-
 </script>

@@ -82,6 +82,8 @@ Allowing cyclic/circular dependencies would **significantly increase compile tim
 
 Cyclic dependencies may also cause memory leaks since each object holds on to the other, their reference counts will never reach zero and hence will never become candidates for collection and cleanup.
 
+[Robe Pike, replying to proposal for allowing import cycles in Golang](https://github.com/golang/go/issues/30247#issuecomment-463940936), said that, this is one area where up-front simplicity is worthwhile. Import cycles can be convenient but their cost can be catastrophic. They should continue to be disallowed.
+
 ### :hammer_and_wrench: Debugging Import Cycles
 
 The worst thing about the import cycle error is, Golang doesn’t tell you source file or part of the code which is causing the error. So it becomes tough to figure out when the codebase is large. You would be wondering around different files/packages to check where actually the issue is. Why golang do not show the cause that causing the error? Because there is not only a single culprit source file in the cycle.
