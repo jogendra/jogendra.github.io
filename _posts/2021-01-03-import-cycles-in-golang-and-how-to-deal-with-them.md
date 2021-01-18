@@ -200,6 +200,10 @@ func main() {
 
 You can find full source code on GitHub at [**jogendra/import-cycle-example-go**](https://github.com/jogendra/import-cycle-example-go)
 
+**Other way** of using the interface to break cycle can be extracting code into separate 3rd package that act as bridge between two packages. But many times it increases code repetition. You can go for this approach keeping your code structure in mind.
+
+> **"Three Way"** Import Chain: Package p1 -> Package m1 & Package p2 -> Package m1
+
 ### Bottom Lines
 
 The import cycle is definitely a pain when the codebase is large. Try to build the application in layers. The higher-level layer should import lower layers but lower layers should not import higher layer (it create cycle). Keeping this in mind and sometimes merging tightly coupled packages into one is a good solution than solving through interfaces. But for more generic cases, interface implementation is a good way to break the import cycles.
