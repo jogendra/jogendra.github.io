@@ -204,6 +204,19 @@ You can find full source code on GitHub at [**jogendra/import-cycle-example-go**
 
 > **"Three Way"** Import Chain: Package p1 -> Package m1 & Package p2 -> Package m1
 
+#### The Ugly Way:
+
+Interestingly, you can avoid importing package by making use of `go:linkname`.
+`go:linkname` is compiler directive (used as `//go:linkname localname [importpath.name]`). This special directive does not apply to the Go code that follows it. Instead, the _//go:linkname_ directive instructs the compiler to use _“importpath.name”_ as the object file symbol name for the variable or function declared as _“localname”_ in the source code. (definition from [golang.org](https://golang.org/cmd/compile/#hdr-Compiler_Directives), hard to understand at first sight, look at the source code link below, I tried solving import cycle using it.)
+
+There are many Go standard package rely on runtime private calls using `go:linkname`. You can also solve import cycle in your code sometime with it but you should avoid using it as it is still a hack and not recommended by the Golang team.
+
+**Point to note** here is Golang standard package **do not** use `go:linkname` to avoid import cycle, rather they use it to avoid exporting APIs that shouldn't be public.
+
+Here is the source code of solution which I implemented using `go:linkname` :
+
+**->** [jogendra/import-cycle-example-go -> golinkname](https://github.com/jogendra/import-cycle-example-go/tree/golinkname)
+
 ### Bottom Lines
 
 The import cycle is definitely a pain when the codebase is large. Try to build the application in layers. The higher-level layer should import lower layers but lower layers should not import higher layer (it create cycle). Keeping this in mind and sometimes merging tightly coupled packages into one is a good solution than solving through interfaces. But for more generic cases, interface implementation is a good way to break the import cycles.
