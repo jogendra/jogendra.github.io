@@ -204,4 +204,6 @@ You can find full source code on GitHub at [**jogendra/import-cycle-example-go**
 
 The import cycle is definitely a pain when the codebase is large. Try to build the application in layers. The higher-level layer should import lower layers but lower layers should not import higher layer (it create cycle). Keeping this in mind and sometimes merging tightly coupled packages into one is a good solution than solving through interfaces. But for more generic cases, interface implementation is a good way to break the import cycles.
 
-I hope you got a fair understanding of Import Cycles. Do share and reach out to me on [Twitter](https://twitter.com/jogendrafx) in case of anything. Thanks for read :)
+You can checkout interesting [discussion about this blog post on Reddit here](https://www.reddit.com/r/golang/comments/kphblv/import_cycles_in_golang_and_how_to_deal_with_them).
+
+I hope you got a fair understanding of Import Cycles. Do share and reach out to me on [Twitter](https://twitter.com/jogendrafx) in case of anything. You can follow my open source work at [github/jogendra](https://github.com/jogendra). Thanks for read :)
