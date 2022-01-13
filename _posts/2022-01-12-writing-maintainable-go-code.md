@@ -10,16 +10,16 @@ scover: import_cycles.png
 Writing maintainable code is essential. Clarity, readability, and simplicity are all aspects of maintainability. It should make the process easy for someone to join your project or maintain it after someone leaves.
 Maintainability is measured by how effortless it is to introduce changes and the amount of risk associated with those changes. To write Go effectively, it is crucial to understand its properties and idioms and apply the established conventions related to naming, program construction, formatting, etc.
 
-Here are some good practices that will help write maintainable Go code.
-
 > **Note**: This article was originally published on [Deepsource blogs](https://deepsource.io/learn/software-engineering-guide/writing-maintainable-go-code/).
+
+Here are some good practices that will help write maintainable Go code.
 
 ### Keep `main` small
 "[Tour of Go](https://go.dev/tour/basics/1)" reads:
 
 > Every Go program is made up of packages. Programs start running in package `main`.
 
-**main** package is unique as neither the exported names are exported, nor does the compiler treat it like a regular package; instead, it compiles it to an executable program. Inside `main` package, **main** function (`main.main`) is present, which is the entry point to a Go program. Expectation from the `main` package and the `main` function is that they do as little as possible.
+**main** package is unique as neither the exported names are exported, nor does the compiler treat it like a regular package; instead, it compiles it to an executable program. Inside **main** package, **main** function (`main.main`) is present, which is the entry point to a Go program. Expectation from the `main` package and the `main` function is that they do as little as possible.
 
 **main.main** acts as a singleton and gets only called once. It is also hard to write tests for the code inside `main.main`, thus, it is highly recommended to drive the program with _main.main_ but not write the business logic inside `main` package. Segregating driver and business logic in separate packages improves the program's structure and maintainability.
 
@@ -121,3 +121,126 @@ if condition1 {
 ```
 
 There are several ways developers can avoid it. [Here](https://en.wikibooks.org/wiki/Computer_Programming/Coding_Style/Minimize_nesting) is a good read about it.
+
+### Write better functions
+
+Avoid writing longer functions; smaller functions are better. Longer functions can be hard to read, test, and maintain. Longer functions often have bigger responsibilities, so it is recommended to break them into smaller functions. More callers can use shorter functions created from breaking down the longer functions as they now serve more managed, independent tasks.
+
+Doug McIlroy, the inventor of Unix pipes and one of the founders of the Unix tradition, said (Unix Philosophy):
+
+> Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features.
+
+So breaking down function to do one thing well does resonate well with the Unix Philosophy.
+
+As discussed earlier, naming is crucial to readability. Good function names are better than comments, and they can be just as helpful in aiding the understanding of code as a well-written comment or API documentation. Try to keep fewer function parameters; they are always better.
+
+### Avoid package level state
+
+In Go, only one instance of a package exists for any given import path. This means that there is only one instance of any variable at the package level. Package level variables are shared across the global level, which means that all accessors will share the same instance. Function X can modify the variable, and function Y can read the modified value.
+
+The use of package-level variables can have many implications:
+
+- It’s hard to trace where the variable got modified and where it got accessed to make any decision.
+- Package-level variables cause tight coupling; change in one corner of code may require a modification in another corner of code, making it tougher to read, modify, and unit test the code.
+- It may cause problems such as race conditions.
+
+However, the use of package-level constants is excellent. So it is always recommended to avoid using the package-level states as much as possible. To reduce the coupling, move the relevant variables as fields on structs that need them. Defining dependencies and configuration in a struct makes it easy. The use of interfaces is also quite helpful.
+
+### Return early and use conditions wisely
+
+Conditional statements are something that we have to write a lot. It plays a massive role in whether the code is clean or messy. For example:
+
+```go
+func do(n int) bool {
+    if n > 12 {
+        return false
+    } else {
+        return true
+    }
+}
+```
+
+The problem with this code is that the `else` statement is not helping here; rather, it makes the code messy and less readable. Instead, write it like:
+
+```go
+func do(n int) bool {
+    if n > 12 {
+        return false
+    }
+    return true
+}
+```
+
+We often see whole functions being wrapped in `if` statements like this:
+
+```go
+func do(n int) {
+    if n > 12 {
+        sum()
+        subtract()
+        multiply()
+    }
+}
+```
+
+Inverting conditional blocks will make it more clean and readable.
+
+```go
+func do(n int) {
+    if n <= 12 {
+        return
+    }
+    sum()
+    subtract()
+    multiply()
+}
+```
+
+### Use switch more often
+
+The **switch** statement is the best way to keep the sequence of if-else statements shorter. `switch` is a beneficial feature for writing clean programs. The program often requires comparison, and our program uses too many `if-else`, making the code messy and less readable. So the use of switch helps a lot.
+
+```go
+func transact(bank string) {
+    if bank == "Citi" {
+        fmt.Printf("Tx #1: %s\n", bank)
+    } else if bank == "StandardChartered" {
+        fmt.Printf("Tx #2: %s\n", bank)
+    } else if bank == "HSBC" || bank == "Deutsche" || bank == "JPMorgan" {
+        fmt.Printf("Tx #3: %s\n", bank)
+    } else if bank == "NatWest" {
+        fmt.Printf("Tx #4: %s\n", bank)
+    } else {
+        fmt.Printf("Tx #E: %s\n", bank)
+    }
+}
+```
+
+This looks messy, right? Now let’s use a `switch` instead. Here is how you can rewrite the same code in an idiomatic way:
+
+```go
+func transact(bank string) {
+    switch bank {
+    case "Citi":
+        fmt.Printf("Tx #1: %s\n", bank)
+    case "StandardChartered":
+        fmt.Printf("Tx #2: %s\n", bank)
+    case "HSBC", "Deutsche", "JPMorgan":
+        fmt.Printf("Tx #3: %s\n", bank)
+    case "NatWest":
+        fmt.Printf("Tx #4: %s\n", bank)
+    default:
+        fmt.Printf("Tx #E: %s\n", bank)
+    }
+}
+```
+
+In the future, if new banks get added, it will be easier and cleaner with `switch-case`.
+
+### Continuous code refactoring
+
+In large codebases, it's essential to refactor the codebase structure. Code refactoring improves the readability and quality of code from time to time. It is not a one-time process; Teams should pay tech debts continuously to keep the codebase sane. I read somewhere nicely — "refactor early, refactor often", which makes a lot of sense in writing maintainable Go code. Packages become heavy with time regarding the amount of code and responsibility, so it is better to break some packages into smaller packages as they are easy to maintain. Another good reason to refactor packages is to improve naming. It is also essential that a package only contains code related to its function. For example, Go moved from `os.SEEK_SET`, `os.SEEK_CUR`, and `os.SEEK_END` to `io.SeekStart`, `io.SeekCurrent`, and `io.SeekEnd` (respectively) are more readable. The package `io` is better for code involving _file I/O_. Breaking packages into small ones also makes the dependencies lightweight.
+
+## Conclusion
+
+With time and other programmers working on a codebase, we understand better what maintainability means. Writing maintainable code is not complicated; it requires knowledge, experience, and careful thought from everyone contributing to the code. The set of good practices that we discussed should help you and the team maintain your Go code better.
