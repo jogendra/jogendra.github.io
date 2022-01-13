@@ -4,7 +4,7 @@ title: "Writing maintainable Go code"
 description: To write Go effectively, it is crucial to understand its properties and idioms and apply the established conventions related to naming, program construction, formatting, etc. The post explains some good practices that will help write maintainable Go code.
 comments: true
 keywords: go, golang, best practices
-scover: import_cycles.png
+scover: maintainable_go.png
 ---
 
 Writing maintainable code is essential. Clarity, readability, and simplicity are all aspects of maintainability. It should make the process easy for someone to join your project or maintain it after someone leaves.
