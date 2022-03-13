@@ -266,8 +266,6 @@ pre code.hljs {
 .head-cover {
   width: 120px !important;
   height: 120px;
-  border: 2px solid #999999;
-  border-radius: 50%;
   margin-top: 32px !important;
   margin-bottom: 32px !important;
 }
