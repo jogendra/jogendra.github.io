@@ -102,6 +102,10 @@ ul.actions li {
   border: 3px solid white;
 }
 
+.navigation {
+  box-shadow: 0 1px rgba(0,0,0,.06);
+}
+
 .home a, .navigation a, .site-footer a {
   color: #333;
 }
@@ -154,9 +158,10 @@ code.language-plain {
 }
 
 .talks {
-  border: 1px solid #666;
-  padding: 2%;
-  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,.06);
+  padding: 4%;
+  border-radius: 16px;
+  background-color: #f7f7f9;
 }
 
 .talks-hr {
@@ -224,9 +229,10 @@ pre code.hljs {
 
 @media screen and (min-width: 1025px) {
   .intro {
-    border: 1px solid #dddddd;
-    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 32px;
     margin: 1%;
+    background-color: #f7f7f9;
   }
 }
 
@@ -268,6 +274,7 @@ pre code.hljs {
   height: 120px;
   margin-top: 32px !important;
   margin-bottom: 32px !important;
+  border-radius: 50%;
 }
 
 .soc-med {
@@ -380,4 +387,8 @@ pre code.hljs {
 .hljs {
   border: 0.1px solid rgba(0,0,0,0.1);
   border-radius: 8px;
+}
+
+.page-content .post-meta {
+  color: #b28900;
 }

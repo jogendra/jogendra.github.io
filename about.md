@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About Me
-description: Personal website about me and technical things I find useful
+description: Jogendra's musings!
 permalink: /about/
 ---
 <br>
 
 Hi, I’m Jogendra!
 
-I'm from India 🇮🇳 and currently living and working in Amsterdam, Netherlands 🇳🇱.
+I'm from India 🇮🇳 and currently based in Amsterdam, Netherlands 🇳🇱
 
 I love planes ✈️ and travel more often. Every machine that fly in sky, excites me and I aspire to fly them someday. You can checkout [my travel stories on Instagram](https://www.instagram.com/jogendrafx/). Sometime I do [digital drawings](http://instagram.com/flyways.io/) in my free time.
 
@@ -18,15 +18,15 @@ You can find me at these places but the most reliable way to reach me is Twitter
 
 <div align="center">
 <p>
-<a href="mailto:jogendrafx@gmail.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="mailto:jogendrafx@gmail.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://github.com/jogendra"><i class="fa fa-github" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://github.com/jogendra"><i class="fa fa-github" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://twitter.com/jogendrafx"><i class="fa fa-twitter" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://twitter.com/jogendrafx"><i class="fa fa-twitter" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://www.linkedin.com/in/jogendrasingh24/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://www.linkedin.com/in/jogendrasingh24/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://www.instagram.com/jogendrafx/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://www.instagram.com/jogendrafx/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
 </p>
 </div>
