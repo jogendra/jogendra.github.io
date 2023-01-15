@@ -10,7 +10,7 @@ Hi, I’m Jogendra!
 
 I'm from India 🇮🇳 and currently based in Amsterdam, Netherlands 🇳🇱
 
-I love planes ✈️ and travel more often. Every machine that fly in sky, excites me and I aspire to fly them someday. You can checkout [my travel stories on Instagram](https://www.instagram.com/jogendrafx/). Sometime I do [digital drawings](http://instagram.com/flyways.io/) in my free time.
+I love planes ✈️ and travel more often. Every machine that fly in sky, excites me and I aspire to fly them someday. You can checkout [my travel stories on Instagram](https://www.instagram.com/jogendrafx/). Sometime I do [digital drawings](http://instagram.com/flyways.io/) in my free time. I'm hobbyist Drone Pilot, I fly DJI Mini 3 Pro.
 
 I am Class of 2020 Graduate and Post Graduate from **Indian Institute of Technology (BHU) Varanasi**. Currently, I am working with [Peaks](https://www.peaks.com) as iOS Engineer. In the past, I worked with [Fynch](https://fynchmobility.com) as Full Stack Mobile Engineer, with [ZestMoney](https://www.zestmoney.in/) as Backend Engineer, with [Zomato](https://www.zomato.com/) as an iOS Developer Intern, I was Google Summer of Code (2018) Student for FOSSASIA, an iOS Developer Intern at [Wheelstreet Inc.](https://www.wheelstreet.com/), and a Software Developer Intern at [Vertext Infosoft](https://vertexinfosoft.com/). I mentored several Open Source Programs including Google Code-In 2018 and Google Summer of Code (2019) students. I love to work with tech communities. In past, I was [GitHub Campus Expert](https://githubcampus.expert/jogendra/) and also a maintainer & core contributor to [FOSSASIA](https://fossasia.org/).
 
