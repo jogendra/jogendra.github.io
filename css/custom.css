@@ -18,11 +18,12 @@
 
 .card {
   border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+  border-radius: 1rem;
 }
 
 .cards .card-img-top {
     width: auto;
+    padding: 1rem;
 }
 
 .cards .card-body {
@@ -397,7 +398,7 @@ pre code.hljs {
   margin-top: 2%;
 }
 
-.uni-projects h3, hr {
+.uni-projects h3 {
   margin: 0;
 }
 
@@ -406,4 +407,34 @@ pre code.hljs {
     width: 110%;
     margin-left: -5%;
   }
+}
+
+.project-apps {
+  margin-top: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  .project-apps {
+    width: 110%;
+    margin-left: -5%;
+  }
+}
+
+.app-list {
+  display: flex;
+}
+
+.app-list .app-item {
+  margin: 2%;
+}
+
+.app-list .app-item img {
+  border-radius: 16px;
+  background-color: #c71585;
+}
+
+.app-list .app-item p {
+  text-align: center;
+  color: #b28900;
+  padding-top: 16px;
 }

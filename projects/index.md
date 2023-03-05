@@ -4,9 +4,32 @@ title: Projects
 permalink: /projects/
 ---
 
+<div class="project-apps">
+<h3>Products I have built/worked on</h3>
+<div class="app-list">
+<div class="app-item">
+<img height=120 width=120>
+<p>Peaks</p>
+</div>
+<div class="app-item">
+<img height=120 width=120>
+<p>Fynch</p>
+</div>
+<div class="app-item">
+<img height=120 width=120>
+<p>Zomato</p>
+</div>
+<div class="app-item">
+<img height=120 width=120>
+<p>Wheelstreet-GO</p>
+</div>
+</div>
+</div>
+
+<hr>
+
 <div class="uni-projects">
 <h3>University Projects</h3>
-<hr>
 </div>
 <div class="cards">
 {% for projects in site.projects reversed %}
