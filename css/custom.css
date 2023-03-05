@@ -392,3 +392,18 @@ pre code.hljs {
 .page-content .post-meta {
   color: #b28900;
 }
+
+.uni-projects {
+  margin-top: 2%;
+}
+
+.uni-projects h3, hr {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .uni-projects {
+    width: 110%;
+    margin-left: -5%;
+  }
+}

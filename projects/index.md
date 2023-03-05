@@ -4,6 +4,10 @@ title: Projects
 permalink: /projects/
 ---
 
+<div class="uni-projects">
+<h3>University Projects</h3>
+<hr>
+</div>
 <div class="cards">
 {% for projects in site.projects reversed %}
 <div class="card">
