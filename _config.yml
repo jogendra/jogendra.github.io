@@ -109,3 +109,22 @@ protocols:
     os_repo: "https://github.com/jogendra/jogendra.github.io"
     os_rcs_type: "git"
     os_src: "git@github.com:jogendra.github.io.git"
+
+# Project - Apps
+
+projectApps:
+- name: "Peaks"
+  link: "https://apps.apple.com/nl/app/peaks-financially-forward/id1290848175"
+  logo: "/assets/logo/peaks.png"
+
+- name: "Fynch"
+  link: "https://apps.apple.com/nl/app/fynch/id1542784131"
+  logo: "/assets/logo/fynch.png"
+
+- name: "Zomato"
+  link: "https://apps.apple.com/in/app/zomato-food-delivery-dining/id434613896"
+  logo: "/assets/logo/zomato.png"
+
+- name: "Wheelstreet-GO"
+  link: "https://www.wheelstreet.com"
+  logo: "/assets/logo/wheelstreet.png"

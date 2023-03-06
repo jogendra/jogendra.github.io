@@ -422,15 +422,18 @@ pre code.hljs {
 
 .app-list {
   display: flex;
+  gap: 2rem;
 }
 
-.app-list .app-item {
-  margin: 2%;
+.app-list a {
+  text-decoration: none;
 }
 
 .app-list .app-item img {
   border-radius: 16px;
   background-color: #c71585;
+  width: 100%;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5))
 }
 
 .app-list .app-item p {

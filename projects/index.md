@@ -7,22 +7,14 @@ permalink: /projects/
 <div class="project-apps">
 <h3>Products I have built/worked on</h3>
 <div class="app-list">
+{% for app in site.projectApps %}
+<a href="{{ app.link }}">
 <div class="app-item">
-<img height=120 width=120>
-<p>Peaks</p>
+<img height="140" width="140" src="{{ app.logo }}">
+<p>{{ app.name }}</p>
 </div>
-<div class="app-item">
-<img height=120 width=120>
-<p>Fynch</p>
-</div>
-<div class="app-item">
-<img height=120 width=120>
-<p>Zomato</p>
-</div>
-<div class="app-item">
-<img height=120 width=120>
-<p>Wheelstreet-GO</p>
-</div>
+</a>
+{% endfor %}
 </div>
 </div>
 
