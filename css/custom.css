@@ -52,6 +52,9 @@
 
 }
 
+.fa {
+  font-style: italic;
+}
 
 ul.actions {
     cursor: default;
@@ -422,6 +425,7 @@ pre code.hljs {
 
 .app-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -433,6 +437,9 @@ pre code.hljs {
   border-radius: 16px;
   background-color: #c71585;
   width: 100%;
+  height: 100%;
+  max-width: 140px;
+  max-height: 140px;
   filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5))
 }
 

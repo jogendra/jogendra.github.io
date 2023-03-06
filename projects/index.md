@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <div class="project-apps">
-<h3>Products I have built/worked on</h3>
+<h3>Products I have built / worked on</h3>
 <div class="app-list">
 {% for app in site.projectApps %}
 <a href="{{ app.link }}">
