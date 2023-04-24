@@ -1,7 +1,11 @@
+<link href="../lightbox/lightbox.css" rel="stylesheet" />
+<script src="../lightbox/lightbox.js"></script>
 <div class="chidiya-gallery">
     {% for image in page.images %}
     <div class="chidiya-item">
-        <img src="{{ image.image_path }}" alt="{{ image.title}}">
+        <a href="{{ image.image_path }}" data-lightbox="DroneShots" data-title="" class="lbox">
+            <img src="{{ image.image_path }}" alt="{{ image.title}}">
+        </a>
         <div class="info">
             {% if image.place %}
             <p><i class="fa fa-map-marker"></i>   {{ image.place }}</p>
