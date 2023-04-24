@@ -52,10 +52,6 @@
 
 }
 
-.fa {
-  font-style: italic;
-}
-
 ul.actions {
     cursor: default;
     list-style: none;
@@ -447,4 +443,45 @@ pre code.hljs {
   text-align: center;
   color: #b28900;
   padding-top: 16px;
+}
+
+/* Gallery */
+
+.chidiya-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4%;
+}
+
+.chidiya-gallery .chidiya-item {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+  .chidiya-gallery .chidiya-item {
+    width: 46%;
+  }
+}
+
+.chidiya-gallery .chidiya-item img {
+  border-radius: 8px;
+  object-fit: cover;
+  height: 300px;
+  width: 400px;
+}
+
+.chidiya-gallery .chidiya-item .info {
+  color: grey;
+}
+
+.chidiya-gallery .chidiya-item .info p {
+  font-size: 80%;
+  display: inline;
+  word-wrap: break-word;
+}
+
+.chidiya-gallery .chidiya-item .info p:nth-child(2) {
+  float: right;
 }
