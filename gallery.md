@@ -25,6 +25,14 @@ drone-images:
     thumbnail: /assets/chidiya/thumbnails/chidiya1.jpg
     date: 18 January 2023
     place: Amsterdam, Netherlands
+  - image_path: /assets/chidiya/chidiya6.jpg
+    thumbnail: /assets/chidiya/thumbnails/chidiya6.jpg
+    date: 26 December 2022
+    place: Saalback, Austria
+  - image_path: /assets/chidiya/chidiya7.JPG
+    thumbnail: /assets/chidiya/thumbnails/chidiya7.jpg
+    date: 25 December 2022
+    place: Seefeld in Tirol, Austria
 
 # Digital Drawaing
 art-images:
