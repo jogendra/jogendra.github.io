@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Gallary
+title: Gallery
 permalink: /gallery/
 
-images:
+drone-images:
   - image_path: /assets/chidiya/chidiya3.jpg
     thumbnail: /assets/chidiya/thumbnails/chidiya3.jpg
     date: 29 March 2023
@@ -25,5 +25,17 @@ images:
     date: 18 January 2023
     place: Amsterdam, Netherlands
 ---
+{% tabs log %}
+<!-- Drone Shots Tab -->
+{% tab log Drone Shots %}
+{% include photo-gallery.html %}
+{% endtab %}
 
-{% include gallery.html %}
+<!-- Digital Art Tab -->
+{% tab log Digital Art / Drawings %}
+{% include art-gallery.html %}
+{% endtab %}
+
+{% endtabs %}
+
+{% include copyright.html %}

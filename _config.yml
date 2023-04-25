@@ -35,6 +35,7 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-seo-tag
+  - jekyll-tabs
 
 exclude:
   - "/vendor/"

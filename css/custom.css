@@ -451,6 +451,7 @@ pre code.hljs {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  row-gap: 0rem;
   margin-top: 4%;
 }
 
@@ -484,4 +485,9 @@ pre code.hljs {
 
 .chidiya-gallery .chidiya-item .info p:nth-child(2) {
   float: right;
+}
+
+.no-margin-hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
