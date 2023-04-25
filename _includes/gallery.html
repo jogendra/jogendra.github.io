@@ -3,8 +3,8 @@
 <div class="chidiya-gallery">
     {% for image in page.images %}
     <div class="chidiya-item">
-        <a href="{{ image.image_path }}" data-lightbox="DroneShots" data-title="" class="lbox">
-            <img src="{{ image.image_path }}" alt="{{ image.title}}">
+        <a href="{{ image.image_path }}" data-lightbox="DroneShots" data-title="{{ image.place }}" class="lbox">
+            <img src="{{ image.thumbnail }}" alt="{{ image.title}}">
         </a>
         <div class="info">
             {% if image.place %}
