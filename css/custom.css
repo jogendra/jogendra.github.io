@@ -473,6 +473,11 @@ pre code.hljs {
   width: 400px;
 }
 
+.chidiya-gallery .chidiya-item a img:hover {
+  border: 1px solid gray;
+  transition: all 0.2s;
+}
+
 .chidiya-gallery .chidiya-item .info {
   color: grey;
 }

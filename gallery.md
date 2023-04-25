@@ -3,6 +3,7 @@ layout: page
 title: Gallery
 permalink: /gallery/
 
+# Drone Shots
 drone-images:
   - image_path: /assets/chidiya/chidiya3.jpg
     thumbnail: /assets/chidiya/thumbnails/chidiya3.jpg
@@ -24,7 +25,14 @@ drone-images:
     thumbnail: /assets/chidiya/thumbnails/chidiya1.jpg
     date: 18 January 2023
     place: Amsterdam, Netherlands
+
+# Digital Drawaing
+art-images:
+- image-path: /assets/chidiya/chidiya3.jpg
+  thumbnail: /assets/chidiya/thumbnails/chidiya3.jpg
+  caption: Long way back home :)
 ---
+
 {% tabs log %}
 <!-- Drone Shots Tab -->
 {% tab log Drone Shots %}

@@ -1,3 +1,18 @@
 <p>Hold on. Author is busy drawing. Coming super soon :)
    <br> Meanwhile, you can follow my drawings on Instagram <a href="https://instagram.com/flyways.io">@flyways.io</a>
 </p>
+
+<div class="chidiya-gallery">
+   {% for image in page.art-images %}
+   <div class="chidiya-item">
+       <a href="{{ image.image-path }}" data-lightbox="DigitalArt" data-title="{{ image.caption }}" class="lbox">
+           <img src="{{ image.thumbnail }}" alt="{{ image.caption}}">
+       </a>
+       <div class="info">
+           {% if image.caption %}
+           <p><i class="fa fa-quote-left"></i>&nbsp;&nbsp;{{ image.caption }}</p>
+           {% endif %}
+       </div>
+   </div>
+   {% endfor %}
+</div>
