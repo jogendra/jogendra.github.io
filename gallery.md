@@ -32,16 +32,12 @@ art-images:
   thumbnail: /assets/chidiya/thumbnails/chidiya3.jpg
   caption: Long way back home :)
 ---
-{% raw %}
 {% tabs log %}
-<!-- Drone Shots Tab -->
 {% tab log Drone Shots %}
 {% include photo-gallery.html %}
 {% endtab %}
-<!-- Digital Art Tab -->
 {% tab log Digital Art / Drawings %}
 {% include art-gallery.html %}
 {% endtab %}
 {% endtabs %}
 {% include copyright.html %}
-{% endraw %}
