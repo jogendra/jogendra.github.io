@@ -33,9 +33,11 @@ art-images:
   caption: Long way back home :)
 ---
 {% tabs log %}
+<!-- Drone Shots Tab -->
 {% tab log Drone Shots %}
 {% include photo-gallery.html %}
 {% endtab %}
+<!-- Digital Art Tab -->
 {% tab log Digital Art / Drawings %}
 {% include art-gallery.html %}
 {% endtab %}
