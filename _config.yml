@@ -33,12 +33,13 @@ defaults:
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-tabs
   - jemoji
   - jekyll-seo-tag
-  - jekyll-tabs
 
 exclude:
   - "/vendor/"
+  - "vendor/bundle"
 
 # Collections
 collections:
