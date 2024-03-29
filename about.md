@@ -10,11 +10,9 @@ Hi, I’m Jogendra!
 
 I'm from India 🇮🇳 and currently based in Amsterdam, Netherlands 🇳🇱
 
-I love planes ✈️ and travel more often. Every machine that fly in sky, excites me and I aspire to fly them someday. You can checkout [my travel stories on Instagram](https://www.instagram.com/jogendrafx/). Sometime I do [digital drawings](http://instagram.com/flyways.io/) in my free time. I'm hobbyist Drone Pilot, I fly DJI Mini 3 Pro.
+I love planes ✈️ and travel more often. Every machine that flies in the sky excites me and I aspire to fly them someday. You can check out [my travel stories on Instagram](https://www.instagram.com/jogendrafx/). Sometimes I do [digital drawings](http://instagram.com/flyways.io/) in my free time. I'm a hobbyist Drone Pilot, I fly DJI Mini 3 Pro.
 
-I am Class of 2020 Graduate and Post Graduate from **Indian Institute of Technology (BHU) Varanasi**. Currently, I am working with [Peaks](https://www.peaks.com) as iOS Engineer. I mentored several Open Source Programs including Google Code-In 2018 and Google Summer of Code (2019) students. I love to work with tech communities. In past, I was [GitHub Campus Expert](https://githubcampus.expert/jogendra/) and also a maintainer & core contributor to [FOSSASIA](https://fossasia.org/).
-
-You can find me at these places but the most reliable way to reach me is Twitter.
+I am a Class of 2020 Graduate and Post Graduate from **Indian Institute of Technology (BHU) Varanasi**. Currently, I am working with [Source](https://www.source.ag) as a Software Engineer (Backend).
 
 <div align="center">
 <p>
