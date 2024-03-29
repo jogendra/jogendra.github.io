@@ -14,17 +14,16 @@ I love planes ✈️ and travel more often. Every machine that flies in the sky 
 
 I am a Class of 2020 Graduate and Post Graduate from **Indian Institute of Technology (BHU) Varanasi**. Currently, I am working with [Source](https://www.source.ag) as a Software Engineer (Backend).
 
-<div align="center">
+<br>
+<div align="left">
 <p>
-<a href="mailto:jogendrafx@gmail.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
+<a href="https://github.com/jogendra"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://github.com/jogendra"><i class="fa fa-github" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
+<a href="https://twitter.com/jogendrafx"><i class="fa fa-twitter" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://twitter.com/jogendrafx"><i class="fa fa-twitter" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
+<a href="https://www.linkedin.com/in/jogendrasingh24/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://www.linkedin.com/in/jogendrasingh24/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
-&nbsp; &nbsp; &nbsp;
-<a href="https://www.instagram.com/jogendrafx/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:40px;color:#b28900"></i></a>
+<a href="https://www.instagram.com/jogendrafx/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
 </p>
 </div>
