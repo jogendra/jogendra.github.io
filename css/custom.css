@@ -450,7 +450,6 @@ pre code.hljs {
 .chidiya-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   row-gap: 0rem;
   margin-top: 4%;
 }
@@ -467,10 +466,12 @@ pre code.hljs {
 }
 
 .chidiya-gallery .chidiya-item img {
-  border-radius: 8px;
+  border-radius: 2px;
   object-fit: cover;
   height: 300px;
-  width: 400px;
+  width: 100%;
+  padding: 2px;
+
 }
 
 .chidiya-gallery .chidiya-item a img:hover {
@@ -495,4 +496,13 @@ pre code.hljs {
 .no-margin-hr {
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.navigation .logo {
+  padding: 0;
+}
+
+.navigation .logo img {
+  max-height: 5em;
+  margin-top: -0.20em;
 }

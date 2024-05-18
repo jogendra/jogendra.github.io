@@ -7,14 +7,14 @@
         <a href="{{ image.image_path }}" data-lightbox="DroneShots" data-title="{{ image.place }}" class="lbox">
             <img src="{{ image.thumbnail }}" alt="{{ image.title}}">
         </a>
-        <div class="info">
+        <!-- <div class="info">
             {% if image.place %}
             <p><i class="fa fa-map-marker"></i>   {{ image.place }}</p>
             {% endif %}
             {% if image.date %}
             <p><i class="fa fa-calendar"></i>   {{ image.date }}</p>
             {% endif %}
-        </div>
+        </div> -->
     </div>
     {% endfor %}
 </div>

@@ -13,7 +13,7 @@ github_username:  jogendra
 permalink: :title
 cover: "/assets/page-cover.png"
 logo: "/assets/nav-logo.png"
-head: "/assets/jogendra.PNG"
+head: "/assets/jogendra.jpg"
 
 # Build settings
 markdown: kramdown
