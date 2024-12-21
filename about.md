@@ -21,7 +21,7 @@ I am a Class of 2020 Graduate and Post Graduate from **Indian Institute of Techn
 &nbsp; &nbsp; &nbsp;
 <a href="https://twitter.com/jogendrafx"><i class="fa fa-twitter" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://www.linkedin.com/in/jogendrasingh24/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
+<a href="https://www.linkedin.com/in/jogendrafx/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
 <a href="https://www.instagram.com/jogendrafx/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;

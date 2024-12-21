@@ -1,5 +1,6 @@
 
 # Site settings
+baseurl: ""
 title: Jogendra
 name: Jogendra
 subtitle: Software engineering, travelling, flying and everything!
@@ -77,7 +78,7 @@ social:
   - name: LinkedIn
     icon: linkedin
     username: Jogendra Kumar
-    url: https://www.linkedin.com/in/jogendrasingh24/
+    url: https://www.linkedin.com/in/jogendrafx/
     desc: Connect with me on LinkedIn
     share: true
 
