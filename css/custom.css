@@ -134,10 +134,15 @@ ul.actions li {
   color: green;
 }
 
+pre {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
 code {
   background-color: #f6f8fa;
   max-height: 30em;
   scrollbar-width: thin;
+  font-size: 0.8em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -220,7 +225,7 @@ code {
 }
 
 pre code.hljs {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .page-content .post .share {
@@ -386,7 +391,7 @@ pre code.hljs {
 
 .hljs {
   border: 0.1px solid rgba(0,0,0,0.1);
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .page-content .post-meta {
@@ -506,3 +511,43 @@ pre code.hljs {
   max-height: 5em;
   margin-top: -0.20em;
 }
+
+pre, code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+/* Style for the copy button */
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #57606a; /* Gray color */
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover effect for the button */
+.copy-btn:hover {
+  background-color: rgba(55, 125, 255, 0.1); /* Light blue */
+  color: #1f6feb; /* Blue color for hover */
+}
+
+/* Focus effect for accessibility */
+.copy-btn:focus {
+  outline: none;
+  background-color: rgba(55, 125, 255, 0.2);
+}
+
+/* Icon size and alignment */
+.copy-btn svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+

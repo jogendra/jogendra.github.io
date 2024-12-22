@@ -20,13 +20,14 @@
 {% endif %}
 <!-- Scripts -->
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+
 <script>
 $(document).ready(function() {
-  // Syntax highlighting
-  hljs.initHighlightingOnLoad();
   // Header
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
@@ -43,4 +44,49 @@ $(document).ready(function() {
   jQuery('.post-content a, .post-excerpt a').not('.footnote, .reversefootnote').attr ('target', '_blank');
 
 });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const codeBlocks = document.querySelectorAll("pre");
+
+    codeBlocks.forEach((block) => {
+      // Create a button with a small icon
+      const button = document.createElement("button");
+      button.className = "copy-btn";
+      button.setAttribute("aria-label", "Copy");
+      button.innerHTML = `
+  <svg aria-hidden="true" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" 
+          d="M19 21H9c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2zm0-2V7H9v12h10zM15 1H5c-1.1 0-2 .9-2 2v12h2V3h10V1z"/>
+  </svg>`;
+
+      // Ensure the button is correctly positioned
+      block.style.position = "relative";
+      block.appendChild(button);
+
+      // Add clipboard functionality
+      button.addEventListener("click", () => {
+        const code = block.querySelector("code").innerText;
+        navigator.clipboard.writeText(code).then(
+          () => {
+            // Replace the icon with a checkmark on success
+            button.innerHTML = `
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16">
+                <path fill="currentColor" 
+                      d="M13.78 3.72a.75.75 0 10-1.06-1.06L6 9.44 3.28 6.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l7.5-7.5z"></path>
+              </svg>`;
+            setTimeout(() => {
+              button.innerHTML = `
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16">
+                  <path fill="currentColor" 
+                        d="M0 1.75A1.75 1.75 0 011.75 0h8.5A1.75 1.75 0 0112 1.75v8.5a1.75 1.75 0 01-1.75 1.75h-8.5A1.75 1.75 0 010 10.25v-8.5zM1.75 1.5a.25.25 0 00-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25v-8.5a.25.25 0 00-.25-.25h-8.5zM15 4.75a.75.75 0 00-.75-.75h-2.5v1.5h2.25v6.25a1.75 1.75 0 01-1.75 1.75H5.5v1.5h6.25a.75.75 0 00.75-.75V4.75z"></path>
+                </svg>`;
+            }, 2000);
+          },
+          (err) => console.error("Failed to copy text:", err)
+        );
+      });
+    });
+  });
 </script>
