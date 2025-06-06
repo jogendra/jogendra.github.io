@@ -12,11 +12,13 @@ Originally from India 🇮🇳 and currently based in Amsterdam, Netherlands �
 
 I’m a software engineer working across backend and iOS.
 
-Outside of work, I’m deeply passionate about aviation. What began as a covid-time fascination with flying machines has grown into something more meaningful — I’m now a Student Pilot at KLM Aeroclub, training toward my Private Pilot License (A). I aspire to carry my passion for aviation beyond flying itself, by building something impactful at the intersection of technology and the skies.
+Outside of work, I’m deeply passionate about aviation. What began as a covid-time fascination with flying machines has grown into something more meaningful — I’m now a Student Pilot at **KLM Aeroclub**, training toward my Private Pilot License (A). I aspire to carry my passion for aviation beyond flying itself, by building something impactful at the intersection of technology and the skies.
 
 Football and cricket are my go-to sports — I love the thrill of the game, both playing and watching the action. Sometimes, I [create digital drawings and capture beautiful aerial views](https://www.instagram.com/flaps.out/) flying my DJI Mini 3 Pro drone.
 
-I graduated in 2020 with a Bachelor’s and Master’s degree in Engineering Physics from the Indian Institute of Technology (BHU) Varanasi.
+I graduated in 2020 with a Bachelor’s and Master’s degree in Engineering Physics from the **Indian Institute of Technology (BHU) Varanasi**.
+
+This space is a reflection of the things I care about — engineering, aviation, learning, and the journey in between.
 
 <br>
 <div align="left">
