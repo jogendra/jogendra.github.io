@@ -6,13 +6,17 @@ permalink: /about/
 ---
 <br>
 
-Hi, I’m Jogendra!
+Hi, I’m Jogendra.
 
-I'm from India 🇮🇳 and currently based in Amsterdam, Netherlands 🇳🇱
+Originally from India 🇮🇳 and currently based in Amsterdam, Netherlands 🇳🇱
 
-I love planes ✈️ and travel more often. Every machine that flies in the sky excites me and ~~I aspire to fly them someday~~ **Update**: I am Student Pilot at [KLM Aeroclub](https://klmaeroclub.com), training to get Private Pilot License (A). You can check out [my travel stories on Instagram](https://www.instagram.com/jogendrafx/). Sometimes I do [digital drawings](http://instagram.com/flyways.io/) in my free time. I'm a hobbyist Drone Pilot, I fly DJI Mini 3 Pro.
+I’m a software engineer working across backend and iOS.
 
-I am a Class of 2020 Graduate and Post Graduate from **Indian Institute of Technology (BHU) Varanasi**. Currently, I am working as a Software Engineer (Backend).
+Outside of work, I’m deeply passionate about aviation. What began as a covid-time fascination with flying machines has grown into something more meaningful — I’m now a Student Pilot at KLM Aeroclub, training toward my Private Pilot License (A). I aspire to carry my passion for aviation beyond flying itself, by building something impactful at the intersection of technology and the skies.
+
+Football and cricket are my go-to sports — I love the thrill of the game, both playing and watching the action. Sometimes, I [create digital drawings and capture beautiful aerial views](https://www.instagram.com/flaps.out/) flying my DJI Mini 3 Pro drone.
+
+I graduated in 2020 with a Bachelor’s and Master’s degree in Engineering Physics from the Indian Institute of Technology (BHU) Varanasi.
 
 <br>
 <div align="left">
