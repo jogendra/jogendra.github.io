@@ -9,9 +9,30 @@ scover: import_cycles.png
 
 As a Golang developer, you probably have encountered import cycles. Golang do not allow import cycles. Go throws a compile-time error if it detects the import cycle in code. In this post, let's understand how the import cycle occurs and how you can deal with them.
 
+### Go Compilation Model
+
+To truly appreciate why Go disallows import cycles, it's crucial to understand its compilation model.
+
+When you compile a Go program, the `go build` command (or `go install`, `go run`) performs several steps:
+
+- The Go toolchain first determines the complete dependency graph of your program. It traces all import statements.
+- It then compiles packages in a specific order: from the leaves of the dependency tree (packages with no outgoing imports) upwards to the root (`main` package or the package being compiled).
+- Finally, all compiled package archives are linked together into a single executable binary.
+
+This ordered compilation works because Go is designed with a strict acyclic dependency graph (DAG) in mind. Each package is compiled exactly once, and its compiled output (an archive file, typically `.a`) is then used by packages that import it.
+
 ### Import Cycles
 
-Let’s say we have two packages, `p1` and `p2`. When package `p1` depends on package `p2` and package `p2` depends on package `p1`, it creates a cycle of dependency.  Or it can be more complicated than this eg. package `p2` does not directly depend on package `p1` but `p2` depends on package `p3` which depends on `p1`, again it is cycle.
+At its core, an import cycle occurs when two or more packages directly or indirectly depend on each other.
+
+Let's illustrate with the simplest scenario involving two packages, p1 and p2:
+
+- **Direct Cycle:** Package `p1` imports `p2`, and `p2` imports `p1`. This forms a direct cycle of dependency.
+The problem can also be more complex, involving multiple packages in a chain:
+
+- **Indirect Cycle:** Package `p1` imports `p2`, `p2` imports `p3`, and `p3` then imports `p1`. Even though `p1` and `p2` don't directly import each other, a cycle is still formed through `p3`.
+
+Visually, an import cycle creates a closed loop in your project's dependency graph:
 
 <img class="fullimg" alt="import cycle golang" src="https://user-images.githubusercontent.com/20956124/103145320-6c099f80-475e-11eb-8d24-9112b5e23dee.png">
 
@@ -74,6 +95,8 @@ imports import-cycle-example/p2
 imports import-cycle-example/p1: import cycle not allowed
 ```
 
+This error clearly indicates the presence of a circular dependency between `p1` and `p2`.
+
 ### Import Cycles Are Bad Design
 
 Go is highly focused on faster compile time rather than speed of execution (even willing to sacrifice some run-time performance for faster build). The Go compiler doesn’t spend a lot of time trying to generate the most efficient possible machine code, it cares more about compiling lots of code quickly.
@@ -113,6 +136,8 @@ go list -f '{\{join .DepsErrors "\n"\}}' <import-path>
 ```
 
 You can provide import path or can be left empty for current directory.
+
+Modern Go IDEs like VS Code with the Go extension or GoLand often provide features to visualize package dependencies and can sometimes highlight import cycles directly within the editor. This can be a very convenient way to spot issues early.
 
 ### Dealing with Import Cycles
 
@@ -200,9 +225,24 @@ func main() {
 
 You can find full source code on GitHub at [**jogendra/import-cycle-example-go**](https://github.com/jogendra/import-cycle-example-go)
 
+Benefits of the this approach:
+
+- Decoupling: Packages become more independent, adhering to the Dependency Inversion Principle.
+- Testability: You can easily mock the pp1Interface when testing `p2`, allowing `p2` to be tested in isolation.
+- Flexibility: It's easier to swap out different implementations of `pp1Interface` in the future.
+
+
 **Other way** of using the interface to break cycle can be extracting code into separate 3rd package that act as bridge between two packages. But many times it increases code repetition. You can go for this approach keeping your code structure in mind.
 
+How it works:
+
+- New Package `m1`: This package contains only the interfaces, shared types, or constants that both `p1` and `p2` need. `m1` should not import `p1` or `p2`.
+- `p1` and `p2` import `m1`: Both original packages now import m1 to access the common definitions.
+- Dependency Direction: The dependency flow becomes `p1 -> m1` and `p2 -> m1`. The cycle is broken because `m1` doesn't depend on `p1` or `p2`.
+
 > **"Three Way"** Import Chain: Package p1 -> Package m1 & Package p2 -> Package m1
+
+This approach often leads to cleaner code when the shared abstraction is truly general-purpose. However, be mindful of "anemic" packages (packages with only interfaces and no concrete logic), as they can sometimes increase complexity.
 
 #### The Ugly Way:
 
@@ -210,6 +250,7 @@ Interestingly, you can avoid importing package by making use of `go:linkname`.
 `go:linkname` is compiler directive (used as `//go:linkname localname [importpath.name]`). This special directive does not apply to the Go code that follows it. Instead, the _//go:linkname_ directive instructs the compiler to use _“importpath.name”_ as the object file symbol name for the variable or function declared as _“localname”_ in the source code. (definition from [golang.org](https://golang.org/cmd/compile/#hdr-Compiler_Directives), hard to understand at first sight, look at the source code link below, I tried solving import cycle using it.)
 
 There are many Go standard package rely on runtime private calls using `go:linkname`. You can also solve import cycle in your code sometime with it but you should avoid using it as it is still a hack and not recommended by the Golang team.
+This approach is also loss of type safety, means the compiler won't check if the types you're linking are compatible, leading to potential runtime errors.
 
 **Point to note** here is Golang standard package **do not** use `go:linkname` to avoid import cycle, rather they use it to avoid exporting APIs that shouldn't be public.
 
@@ -223,4 +264,4 @@ The import cycle is definitely a pain when the codebase is large. Try to build t
 
 You can checkout interesting [discussion about this blog post on Reddit here](https://www.reddit.com/r/golang/comments/kphblv/import_cycles_in_golang_and_how_to_deal_with_them).
 
-I hope you got a fair understanding of Import Cycles. Do share and reach out to me on [Twitter](https://twitter.com/jogendrafx) in case of anything. You can follow my open source work at [github/jogendra](https://github.com/jogendra). Thanks for read :)
+I hope you got a fair understanding of Import Cycles. Do share and reach out to me on [Twitter](https://twitter.com/jogendrafx) in case of anything. You can follow my open source work at [github/jogendra](https://github.com/jogendra). Thanks for the read :)
