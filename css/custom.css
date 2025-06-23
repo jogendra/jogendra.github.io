@@ -466,7 +466,16 @@ pre code.hljs {
 
 @media screen and (min-width: 768px) {
   .chidiya-gallery .chidiya-item {
-    width: 46%;
+    width: 50%;
+  }
+
+  .chidiya-gallery {
+    margin-left: -10%;
+    margin-right: -10%;
+  }
+
+  .chidiya-gallery .chidiya-item img {
+    height: 350px;
   }
 }
 
