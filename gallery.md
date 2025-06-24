@@ -35,6 +35,12 @@ drone-images:
   - image_path: https://res.cloudinary.com/dslxmdktf/image/upload/v1750705942/florence-city-view_asrkks.jpg
     thumbnail: https://res.cloudinary.com/dslxmdktf/image/upload/v1750705942/florence-city-view_asrkks.jpg
     place: Florence, Italy
+  - image_path: https://res.cloudinary.com/dslxmdktf/image/upload/v1750781793/windmill-in-tulips-field_ehgwcp.jpg
+    thumbnail: https://res.cloudinary.com/dslxmdktf/image/upload/v1750781793/windmill-in-tulips-field_ehgwcp.jpg
+    place: Keukenhof, Netherlands
+  - image_path: https://res.cloudinary.com/dslxmdktf/image/upload/v1750782824/real-madrid-santiago-bernabeu_cvojzr.jpg
+    thumbnail: https://res.cloudinary.com/dslxmdktf/image/upload/v1750782824/real-madrid-santiago-bernabeu_cvojzr.jpg
+    place: Madrid, Spain
   - image_path: /assets/chidiya/chidiya3.jpg
     thumbnail: /assets/chidiya/thumbnails/chidiya3.jpg
     place: Amsterdam, Netherlands
