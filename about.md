@@ -27,7 +27,7 @@ This space is a reflection of the things I care about — engineering, aviation,
 &nbsp; &nbsp; &nbsp;
 <a href="https://www.linkedin.com/in/jogendrafx/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://www.instagram.com/jogendrafx/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
+<a href="https://www.instagram.com/flaps.out/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:32px;color:#b28900"></i></a>
 &nbsp; &nbsp; &nbsp;
 </p>
 </div>
