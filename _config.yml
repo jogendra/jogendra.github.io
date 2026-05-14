@@ -43,8 +43,6 @@ exclude:
 # Collections
 collections:
   - talks
-  - projects
-
 #
 # Social settings are used in two places:
 # * In the footer, as links to your personal profiles
@@ -80,13 +78,6 @@ social:
     username: Jogendra Kumar
     url: https://www.linkedin.com/in/jogendrafx/
     desc: Connect with me on LinkedIn
-    share: true
-
-  - name: Instagram
-    icon: instagram
-    username: flaps.out
-    url: https://www.instagram.com/flaps.out/
-    desc: Follow me on Instagram
     share: true
 
   - name: Reddit
